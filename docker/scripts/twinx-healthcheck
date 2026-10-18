@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+set -eo pipefail
+
+source /opt/ros/jazzy/setup.bash
+source /home/twin/ws/install/setup.bash
+
+case "${1:?Expected simulator or desktop}" in
+    simulator)
+        ;;
+    desktop)
+        curl --fail --silent --show-error --max-time 3 \
+            http://127.0.0.1:6080/vnc.html > /dev/null
+        xdpyinfo -display "${DISPLAY:?DISPLAY must be set}" > /dev/null
+        supervisorctl -c /opt/twinx/docker/desktop/supervisord.conf status rviz \
+            | grep -q RUNNING
+        ;;
+    *)
+        echo "ERROR: Unknown healthcheck target: $1" >&2
+        exit 1
+        ;;
+esac
+
+if ! timeout 12 ros2 topic echo /clock rosgraph_msgs/msg/Clock \
+        --once --qos-reliability best_effort > /dev/null; then
+    echo "ERROR: No ROS simulation clock received within 12 seconds. Check simulator and DDS discovery." >&2
+    exit 1
+fi

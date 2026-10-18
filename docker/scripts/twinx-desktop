@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+if [[ ! -r "${VNC_PASSWORD_FILE:?VNC_PASSWORD_FILE must be set}" ]]; then
+    echo "ERROR: VNC secret is missing or unreadable. Run scripts\\Initialize-Project.ps1." >&2
+    exit 1
+fi
+
+password="$(cat "$VNC_PASSWORD_FILE")"
+if [[ "${#password}" -ne 8 || "$password" == *$'\n'* || "$password" == *$'\r'* ]]; then
+    echo "ERROR: Use exactly 8 ASCII characters for the classic VNC password, without a newline." >&2
+    exit 1
+fi
+if [[ ! "$password" =~ ^[[:graph:]]{8}$ ]]; then
+    echo "ERROR: VNC password must contain only printable, non-space ASCII characters." >&2
+    exit 1
+fi
+
+umask 077
+mkdir -p "$HOME/.vnc" "${XDG_RUNTIME_DIR:?XDG_RUNTIME_DIR must be set}"
+x11vnc -storepasswd "$password" "$HOME/.vnc/passwd" > /dev/null
+unset password
+exec /usr/bin/supervisord -c /opt/twinx/docker/desktop/supervisord.conf

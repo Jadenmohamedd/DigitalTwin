@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+set -eo pipefail
+
+source /opt/ros/jazzy/setup.bash
+colcon --log-base /home/twin/ws/log build \
+    --base-paths /opt/twinx/src \
+    --build-base /home/twin/ws/build \
+    --install-base /home/twin/ws/install \
+    --symlink-install \
+    --event-handlers console_direct+
+source /home/twin/ws/install/setup.bash
+exec "$@"

@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+set -eo pipefail
+
+source /opt/ros/jazzy/setup.bash
+source /home/twin/ws/install/setup.bash
+exec twinx-display-run gz sim -g -v 3

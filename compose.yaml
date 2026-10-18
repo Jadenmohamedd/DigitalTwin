@@ -1,0 +1,82 @@
+name: twinx
+
+x-runtime: &runtime
+  image: twinx-dev:jazzy-harmonic
+  build:
+    context: .
+    dockerfile: docker/Dockerfile
+  init: true
+  restart: unless-stopped
+  stop_grace_period: 30s
+  networks:
+    - ros
+  environment: &ros-environment
+    ROS_DOMAIN_ID: ${ROS_DOMAIN_ID:-42}
+    RMW_IMPLEMENTATION: rmw_cyclonedds_cpp
+    CYCLONEDDS_URI: file:///opt/twinx/docker/cyclonedds.xml
+    ROS_AUTOMATIC_DISCOVERY_RANGE: SUBNET
+    GZ_PARTITION: twinx
+    LIBGL_ALWAYS_SOFTWARE: "1"
+    QT_X11_NO_MITSHM: "1"
+  tmpfs:
+    - /tmp:rw,nosuid,nodev,size=512m,mode=1777
+
+services:
+  simulator:
+    <<: *runtime
+    profiles: [sim, gui]
+    command: ["ros2", "launch", "twinx_bringup", "simulation.launch.xml"]
+    volumes:
+      - ./ros_ws/src:/opt/twinx/src:ro
+      - simulator-workspace:/home/twin/ws
+      - ./data/recordings:/data/recordings
+      - ./data/results:/data/results
+    healthcheck:
+      test: ["CMD", "twinx-healthcheck", "simulator"]
+      interval: 30s
+      timeout: 20s
+      retries: 3
+      start_period: 90s
+
+  desktop:
+    <<: *runtime
+    profiles: [gui]
+    command: ["twinx-desktop"]
+    depends_on:
+      simulator:
+        condition: service_healthy
+    ports:
+      - "127.0.0.1:${WEB_PORT:-8080}:6080"
+    environment:
+      <<: *ros-environment
+      DISPLAY: ":0"
+      DESKTOP_WIDTH: ${DESKTOP_WIDTH:-1440}
+      DESKTOP_HEIGHT: ${DESKTOP_HEIGHT:-900}
+      VNC_PASSWORD_FILE: /run/secrets/vnc_password
+      XDG_RUNTIME_DIR: /tmp/runtime-twin
+    shm_size: 512m
+    secrets:
+      - vnc_password
+    volumes:
+      - ./ros_ws/src:/opt/twinx/src:ro
+      - desktop-workspace:/home/twin/ws
+      - ./data/recordings:/data/recordings
+      - ./data/results:/data/results
+    healthcheck:
+      test: ["CMD", "twinx-healthcheck", "desktop"]
+      interval: 30s
+      timeout: 20s
+      retries: 3
+      start_period: 90s
+
+networks:
+  ros:
+    driver: bridge
+
+volumes:
+  simulator-workspace:
+  desktop-workspace:
+
+secrets:
+  vnc_password:
+    file: ./.secrets/vnc_password
