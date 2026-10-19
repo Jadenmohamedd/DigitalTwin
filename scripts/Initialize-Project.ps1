@@ -27,6 +27,5 @@ foreach ($directory in @("data\recordings", "data\results")) {
 }
 
 Write-Host "Local environment and VNC secret are ready. Existing files were preserved."
-Write-Host "Build: docker compose --profile gui build simulator"
-Write-Host "Start: docker compose --profile gui up -d --wait --wait-timeout 180"
+Write-Host "Start: docker compose up --build -d"
 Write-Host "Read the VNC password locally: Get-Content .\.secrets\vnc_password"

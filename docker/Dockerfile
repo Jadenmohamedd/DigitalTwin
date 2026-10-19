@@ -2,9 +2,9 @@ FROM ros:jazzy-ros-base-noble@sha256:103b6c417973394659af6804d4917cd489b91e5ed22
 
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
-ARG ROS_GZ_VERSION=1.0.24-1noble.20261006.041805
-ARG RVIZ_VERSION=14.1.24-1noble.20260915.204213
-ARG CYCLONEDDS_VERSION=2.2.4-1noble.20260911.095700
+ARG ROS_GZ_VERSION=1.0.24-1noble.20261006.044318
+ARG RVIZ_VERSION=14.1.24-1noble.20260916.104902
+ARG CYCLONEDDS_VERSION=2.2.4-1noble.20260911.054215
 
 RUN apt-get update \
     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \

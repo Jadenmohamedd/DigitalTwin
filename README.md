@@ -22,8 +22,7 @@ models are downloaded at startup.
 Set-Location C:\MyFiles\Github\DigitalTwin
 powershell -ExecutionPolicy Bypass -File .\scripts\Initialize-Project.ps1
 docker compose --profile gui config --quiet
-docker compose --profile gui build simulator
-docker compose --profile gui up -d --wait --wait-timeout 180
+docker compose up --build -d
 docker compose ps
 Get-Content .\.secrets\vnc_password
 Start-Process "http://localhost:8080/vnc.html?autoconnect=1&resize=scale"
@@ -95,8 +94,10 @@ RViz uses simulation time; both health checks require receiving `/clock` within
 a bounded timeout. Desktop additionally checks HTTP, X display, and RViz.
 X clients wait for display readiness, not just a fixed startup sleep.
 
-`.env` defaults to `COMPOSE_PROFILES=gui`, so `docker compose up -d --wait` starts
-the browser stack. For headless-only operation, explicitly override that default:
+The initializer creates `.env` from `.env.example`, which defaults to
+`COMPOSE_PROFILES=gui`. This makes `docker compose up --build -d` build and start
+the browser stack with no extra profile or build-argument flags. For headless-only
+operation, explicitly override that default:
 
 ```powershell
 docker compose --profile sim up -d --wait
@@ -152,10 +153,10 @@ infrastructure checks, not an end-to-end navigation success claim.
 
 Scripts are checked with `bash -n`, and XML/SDF with `xmllint`, during image build.
 The base image is digest-pinned; direct `ros_gz`, RViz, and Cyclone DDS package
-versions are pinned to verified repository candidates. Transitive Ubuntu/ROS
-packages are **not** snapshot-pinned. The installed version inventory is
-`/opt/twinx-packages.tsv`; if a pinned package leaves the live repository, select
-a compatible published version explicitly rather than silently unpinning it.
+versions are pinned to repository candidates verified on 2026-10-18. Transitive
+Ubuntu/ROS packages are **not** snapshot-pinned. The installed version inventory
+is `/opt/twinx-packages.tsv`; if a pinned package leaves the live repository,
+select a compatible published version explicitly rather than silently unpinning it.
 
 ```powershell
 # Capture actual versions and the local image identifier outside container storage.
