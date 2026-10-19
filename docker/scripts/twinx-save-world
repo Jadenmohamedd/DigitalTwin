@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+set -eo pipefail
+source /opt/ros/jazzy/setup.bash
+exec python3 /opt/twinx/docker/tools/save_world.py

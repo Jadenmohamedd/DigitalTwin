@@ -16,6 +16,7 @@ x-runtime: &runtime
     CYCLONEDDS_URI: file:///opt/twinx/docker/cyclonedds.xml
     ROS_AUTOMATIC_DISCOVERY_RANGE: SUBNET
     GZ_PARTITION: twinx
+    GZ_SIM_RESOURCE_PATH: /opt/twinx/models
     LIBGL_ALWAYS_SOFTWARE: "1"
     QT_X11_NO_MITSHM: "1"
   tmpfs:
@@ -28,6 +29,9 @@ services:
     command: ["ros2", "launch", "twinx_bringup", "simulation.launch.xml"]
     volumes:
       - ./ros_ws/src:/opt/twinx/src:ro
+      - ./ros_ws/src/twinx_bringup/worlds:/opt/twinx/src/twinx_bringup/worlds
+      - ./assets/models:/opt/twinx/models
+      - ./data/gazebo:/home/twin/.gz
       - simulator-workspace:/home/twin/ws
       - ./data/recordings:/data/recordings
       - ./data/results:/data/results
@@ -36,7 +40,7 @@ services:
       interval: 30s
       timeout: 20s
       retries: 3
-      start_period: 90s
+      start_period: 300s
 
   desktop:
     <<: *runtime
@@ -59,6 +63,9 @@ services:
       - vnc_password
     volumes:
       - ./ros_ws/src:/opt/twinx/src:ro
+      - ./ros_ws/src/twinx_bringup/worlds:/opt/twinx/src/twinx_bringup/worlds
+      - ./assets/models:/opt/twinx/models
+      - ./data/gazebo:/home/twin/.gz
       - desktop-workspace:/home/twin/ws
       - ./data/recordings:/data/recordings
       - ./data/results:/data/results
@@ -67,7 +74,7 @@ services:
       interval: 30s
       timeout: 20s
       retries: 3
-      start_period: 90s
+      start_period: 300s
 
 networks:
   ros:

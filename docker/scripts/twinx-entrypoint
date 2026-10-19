@@ -2,11 +2,15 @@
 set -eo pipefail
 
 source /opt/ros/jazzy/setup.bash
+export CMAKE_BUILD_PARALLEL_LEVEL=${CMAKE_BUILD_PARALLEL_LEVEL:-2}
+export MAKEFLAGS=${MAKEFLAGS:--j2}
 colcon --log-base /home/twin/ws/log build \
     --base-paths /opt/twinx/src \
     --build-base /home/twin/ws/build \
     --install-base /home/twin/ws/install \
     --symlink-install \
+    --parallel-workers 2 \
+    --cmake-args -DBUILD_TESTING=OFF \
     --event-handlers console_direct+
 source /home/twin/ws/install/setup.bash
 exec "$@"

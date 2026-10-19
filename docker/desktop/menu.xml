@@ -10,6 +10,9 @@
     <item label="Gazebo GUI (connect to simulator)">
       <action name="Execute"><command>twinx-gazebo</command></action>
     </item>
+    <item label="Save world to repository">
+      <action name="Execute"><command>xterm -hold -title "Save TWINX world" -e twinx-save-world</command></action>
+    </item>
     <separator />
     <item label="Reconfigure desktop">
       <action name="Reconfigure" />

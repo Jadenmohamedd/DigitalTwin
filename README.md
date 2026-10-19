@@ -1,11 +1,11 @@
 # TWINX: initial Docker environment
 
 Ubuntu 24.04 + ROS 2 Jazzy + Gazebo Harmonic, with an authenticated, browser-accessible
-Linux desktop and RViz. This first infrastructure pass intentionally stops at a
-live browser GUI, as requested. **It is not yet a working navigation prototype.**
+Linux desktop and RViz. Go2 is automatically spawned into the laboratory with its controller bringup.
+**It is not yet a validated autonomous navigation prototype.**
 
 The simulator runs an original, primitive-only 8 m x 6 m laboratory with walls, a
-static obstacle, and visual markers for a future start and goal. No external
+static obstacle, and visual markers for a future start and goal. The vendored Go2 model is loaded locally; no external
 models are downloaded at startup.
 
 ## Prerequisites
@@ -39,8 +39,8 @@ docker compose exec -d desktop twinx-gazebo
 ```
 
 RViz initially shows a grid only: the world is visualized in **Gazebo**, not
-automatically in RViz. A missing `world` TF warning is expected until the robot
-and its transform tree are implemented. No placeholder TF publisher masks this.
+automatically in RViz. Set RViz Fixed Frame to `odom` to inspect robot-relative data.
+No placeholder map transform is published; localization is a later milestone.
 
 The initializer preserves existing settings and secrets. Edit `.env` to change
 `WEB_PORT`, `ROS_DOMAIN_ID` (use 0-101), or desktop dimensions, then recreate with
@@ -153,7 +153,8 @@ infrastructure checks, not an end-to-end navigation success claim.
 
 Scripts are checked with `bash -n`, and XML/SDF with `xmllint`, during image build.
 The base image is digest-pinned; direct `ros_gz`, RViz, and Cyclone DDS package
-versions are pinned to repository candidates verified on 2026-10-18. Transitive
+versions are pinned to Ubuntu Noble `amd64` repository candidates verified on
+2026-10-19. Transitive
 Ubuntu/ROS packages are **not** snapshot-pinned. The installed version inventory
 is `/opt/twinx-packages.tsv`; if a pinned package leaves the live repository,
 select a compatible published version explicitly rather than silently unpinning it.
@@ -183,6 +184,12 @@ add `-v` unless you intentionally want to discard generated build/install caches
 
 ## Rendering and troubleshooting
 
+- **Build fails with `Version '...' was not found`:** ROS Debian build versions
+  can differ by architecture and can leave the live repository after a sync.
+  Check the published candidates using the same base image as the Dockerfile:
+  `docker run --rm ros:jazzy-ros-base-noble@sha256:103b6c417973394659af6804d4917cd489b91e5ed22eb7bef263025a3bed2410 bash -c "apt-get update -qq && apt-cache policy ros-jazzy-ros-gz ros-jazzy-rviz2 ros-jazzy-rmw-cyclonedds-cpp"`.
+  Update the corresponding version arguments in `docker/Dockerfile` to compatible
+  published versions, then retry `docker compose up --build -d`.
 - **ROS discovery:** compare `ROS_DOMAIN_ID`, `RMW_IMPLEMENTATION`, and
   `CYCLONEDDS_URI` in both containers. Check `docker compose logs simulator`.
   ROS tools on the Windows host are not automatically connected to this network;
@@ -251,8 +258,60 @@ The world and infrastructure package can remain independent of that choice.
   web files, WebSocket proxy, and connection settings.
 - [Compose profiles](https://docs.docker.com/compose/how-tos/profiles/).
 
-No third-party robot/world assets are copied. The laboratory consists of original
-SDF primitives. ROS/RViz/ros_gz and the new bringup package use Apache-2.0;
+The laboratory consists of original SDF primitives. Go2 and CHAMP sources are
+vendored under `ros_ws/src/unitree_go2_ros2`; see its UPSTREAM.md and component
+license notices. ROS/RViz/ros_gz and the new bringup package use Apache-2.0;
 Gazebo dependencies carry their upstream licenses. noVNC is MPL-2.0, websockify
 is LGPL-3.0, Openbox is GPL-2.0+, and x11vnc is GPL-2.0+. Exact distro notices are
 retained in `/usr/share/doc/<package>/copyright` inside the image.
+
+## Go2 startup and sharing scene edits
+
+Go2 now spawns automatically in `twinx_lab` at (-2, -1.5, 0.375).
+The launch in `ros_ws/src/twinx_bringup/launch/go2.launch.py` owns robot spawning,
+CHAMP, estimation and joint controller activation. Gazebo still has one server.
+The cameras and 3D LiDARs are disabled initially for software rendering performance.
+This provides robot bringup; walking and navigation still require runtime validation.
+
+Commit and push the integration changes first. After pulling on another device:
+
+```powershell
+git pull
+powershell -ExecutionPolicy Bypass -File .\scripts\Initialize-Project.ps1
+docker compose --profile gui up -d --build --force-recreate
+```
+
+World files are stored in `ros_ws/src/twinx_bringup/worlds/` and custom model
+assets in `assets/models/`. Both are mounted directly from the repository.
+World changes made by editing `lab.sdf` take effect after restarting simulator.
+To persist objects added/moved/deleted in the Gazebo GUI, save BEFORE restarting.
+Right-click the desktop background and select **Save world to repository**, or run:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\scripts\Save-World.ps1
+git diff -- ros_ws/src/twinx_bringup/worlds/lab.sdf
+git add ros_ws/src/twinx_bringup/worlds assets/models
+# Review the staged changes before choosing your commit message.
+git commit -m "Save laboratory layout"
+git push
+```
+
+The save command exports the current scene, removes the launch-managed Go2 to
+avoid duplicate robots, and writes `lab.sdf` with a local `.sdf.bak` backup.
+Robot spawn coordinates belong in `go2.launch.py`; they are not saved from the
+moving simulation. Save while the scene is paused if other dynamic objects matter.
+This is a layout snapshot, not a controller/physics checkpoint or full GUI settings backup.
+No automatic Git commits or pushes occur.
+
+Fuel/cache downloads persist locally in ignored `data/gazebo/`. The save helper
+copies referenced cached models (including textures) into tracked `assets/models/`
+when a model.config root is available, and replaces their URIs with model:// paths.
+If an asset cannot be made portable, saving fails rather than overwriting the world
+with an unusable path. Put custom models and all their textures in assets/models
+before inserting them. Commit those files to share them; a cache folder alone
+will not transfer through Git. Check third-party asset redistribution permissions.
+Large assets may need Git LFS configured on every device.
+
+Recordings/results remain local under data/ and are ignored by Git. Build/install
+volumes are disposable generated files; they do not define the saved scene.
+Never use `docker compose down -v` as a routine update step.

@@ -22,7 +22,7 @@ if (-not (Test-Path $passwordFile)) {
     }
 }
 
-foreach ($directory in @("data\recordings", "data\results")) {
+foreach ($directory in @("data\recordings", "data\results", "data\gazebo", "assets\models")) {
     New-Item -ItemType Directory -Path (Join-Path $root $directory) -Force | Out-Null
 }
 
