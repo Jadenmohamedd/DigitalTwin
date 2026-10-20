@@ -1,0 +1,13 @@
+services:
+  ubuntu:
+    build:
+      context: ./container
+      args:
+        UBUNTU_IMAGE: ${UBUNTU_IMAGE:-ubuntu:latest}
+    init: true
+    ports:
+      - "127.0.0.1:6080:6080"
+    volumes:
+      - ./shared:/shared
+    shm_size: "2gb"
+    restart: unless-stopped

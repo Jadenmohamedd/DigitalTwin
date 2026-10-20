@@ -1,8 +1,0 @@
-#!/usr/bin/env bash
-set -eo pipefail
-
-source /opt/ros/jazzy/setup.bash
-source /home/twin/ws/install/setup.bash
-exec twinx-display-run rviz2 \
-    -d /opt/twinx/src/twinx_bringup/rviz/initial.rviz \
-    --ros-args -p use_sim_time:=true
