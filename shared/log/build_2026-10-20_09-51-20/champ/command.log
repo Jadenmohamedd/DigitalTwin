@@ -1,0 +1,6 @@
+Invoking command in '/shared/build/champ': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /shared/unitree_go2_ros2/champ -DCMAKE_INSTALL_PREFIX=/shared/install/champ
+Invoked command in '/shared/build/champ' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /shared/unitree_go2_ros2/champ -DCMAKE_INSTALL_PREFIX=/shared/install/champ
+Invoking command in '/shared/build/champ': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /shared/build/champ -- -j16 -l16
+Invoked command in '/shared/build/champ' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /shared/build/champ -- -j16 -l16
+Invoking command in '/shared/build/champ': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /shared/build/champ
+Invoked command in '/shared/build/champ' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /shared/build/champ

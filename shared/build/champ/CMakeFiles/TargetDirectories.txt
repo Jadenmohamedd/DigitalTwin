@@ -1,0 +1,9 @@
+/shared/build/champ/CMakeFiles/uninstall.dir
+/shared/build/champ/CMakeFiles/champ_uninstall.dir
+/shared/build/champ/CMakeFiles/test.dir
+/shared/build/champ/CMakeFiles/edit_cache.dir
+/shared/build/champ/CMakeFiles/rebuild_cache.dir
+/shared/build/champ/CMakeFiles/list_install_components.dir
+/shared/build/champ/CMakeFiles/install.dir
+/shared/build/champ/CMakeFiles/install/local.dir
+/shared/build/champ/CMakeFiles/install/strip.dir

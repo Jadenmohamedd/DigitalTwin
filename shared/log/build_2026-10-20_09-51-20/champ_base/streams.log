@@ -1,0 +1,101 @@
+[0.308s] Invoking command in '/shared/build/champ_base': AMENT_PREFIX_PATH=/shared/install/champ_msgs:/shared/install/champ:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/shared/install/champ_msgs:/shared/install/champ:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/shared/install/champ_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/shared/install/champ_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake /shared/unitree_go2_ros2/champ_base -DCMAKE_INSTALL_PREFIX=/shared/install/champ_base
+[1.126s] -- The C compiler identification is GNU 13.3.0
+[1.728s] -- The CXX compiler identification is GNU 13.3.0
+[1.984s] -- Detecting C compiler ABI info
+[3.926s] -- Detecting C compiler ABI info - done
+[4.073s] -- Check for working C compiler: /usr/bin/cc - skipped
+[4.078s] -- Detecting C compile features
+[4.082s] -- Detecting C compile features - done
+[4.248s] -- Detecting CXX compiler ABI info
+[6.096s] -- Detecting CXX compiler ABI info - done
+[6.241s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[6.244s] -- Detecting CXX compile features
+[6.287s] -- Detecting CXX compile features - done
+[6.501s] -- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[8.696s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[11.407s] -- Found rclcpp: 28.1.22 (/opt/ros/jazzy/share/rclcpp/cmake)
+[12.825s] -- Found rosidl_generator_c: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[13.287s] -- Found rosidl_generator_cpp: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[13.772s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[14.233s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[15.859s] -- Found rmw_implementation_cmake: 7.3.4 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[16.017s] -- Found rmw_fastrtps_cpp: 8.4.4 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[17.342s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[17.470s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[17.605s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[18.943s] -- Found rclpy: 7.1.12 (/opt/ros/jazzy/share/rclpy/cmake)
+[19.147s] -- Found champ_msgs: 0.1.0 (/shared/install/champ_msgs/share/champ_msgs/cmake)
+[20.536s] -- Found visualization_msgs: 5.3.8 (/opt/ros/jazzy/share/visualization_msgs/cmake)
+[21.011s] -- Found trajectory_msgs: 5.3.8 (/opt/ros/jazzy/share/trajectory_msgs/cmake)
+[21.265s] -- Found nav_msgs: 5.3.8 (/opt/ros/jazzy/share/nav_msgs/cmake)
+[21.530s] -- Found tf2_ros: 0.36.23 (/opt/ros/jazzy/share/tf2_ros/cmake)
+[23.796s] -- Found urdf: 2.10.1 (/opt/ros/jazzy/share/urdf/cmake)
+[24.841s] -- Found champ: 0.1.0 (/shared/install/champ/share/champ/cmake)
+[26.287s] -- Configuring done (25.8s)
+[29.326s] -- Generating done (2.8s)
+[30.118s] -- Build files have been written to: /shared/build/champ_base
+[30.147s] Invoked command in '/shared/build/champ_base' returned '0': AMENT_PREFIX_PATH=/shared/install/champ_msgs:/shared/install/champ:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/shared/install/champ_msgs:/shared/install/champ:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/shared/install/champ_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/shared/install/champ_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake /shared/unitree_go2_ros2/champ_base -DCMAKE_INSTALL_PREFIX=/shared/install/champ_base
+[30.163s] Invoking command in '/shared/build/champ_base': AMENT_PREFIX_PATH=/shared/install/champ_msgs:/shared/install/champ:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/shared/install/champ_msgs:/shared/install/champ:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/shared/install/champ_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/shared/install/champ_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /shared/build/champ_base -- -j16 -l16
+[31.102s] [  8%] [32mBuilding CXX object CMakeFiles/message_relay.dir/src/message_relay.cpp.o[0m
+[31.126s] [ 16%] [32mBuilding CXX object CMakeFiles/quadruped_controller.dir/src/quadruped_controller.cpp.o[0m
+[31.140s] [ 25%] [32mBuilding CXX object CMakeFiles/state_estimation.dir/src/state_estimation.cpp.o[0m
+[89.827s] [ 33%] [32m[1mLinking CXX shared library libquadruped_controller.so[0m
+[103.336s] [ 41%] [32m[1mLinking CXX shared library libmessage_relay.so[0m
+[105.659s] [ 50%] [32m[1mLinking CXX shared library libstate_estimation.so[0m
+[106.362s] [ 50%] Built target quadruped_controller
+[107.104s] [ 58%] [32mBuilding CXX object CMakeFiles/quadruped_controller_node.dir/src/quadruped_controller_node.cpp.o[0m
+[123.599s] [ 58%] Built target message_relay
+[124.071s] [ 66%] [32mBuilding CXX object CMakeFiles/message_relay_node.dir/src/message_relay_node.cpp.o[0m
+[126.694s] [ 66%] Built target state_estimation
+[127.094s] [ 75%] [32mBuilding CXX object CMakeFiles/state_estimation_node.dir/src/state_estimation_node.cpp.o[0m
+[135.279s] [ 83%] [32m[1mLinking CXX executable quadruped_controller_node[0m
+[137.007s] [ 83%] Built target quadruped_controller_node
+[140.939s] [ 91%] [32m[1mLinking CXX executable message_relay_node[0m
+[143.056s] [ 91%] Built target message_relay_node
+[147.635s] [100%] [32m[1mLinking CXX executable state_estimation_node[0m
+[149.728s] [100%] Built target state_estimation_node
+[150.089s] Invoked command in '/shared/build/champ_base' returned '0': AMENT_PREFIX_PATH=/shared/install/champ_msgs:/shared/install/champ:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/shared/install/champ_msgs:/shared/install/champ:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/shared/install/champ_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/shared/install/champ_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /shared/build/champ_base -- -j16 -l16
+[150.127s] Invoking command in '/shared/build/champ_base': AMENT_PREFIX_PATH=/shared/install/champ_msgs:/shared/install/champ:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/shared/install/champ_msgs:/shared/install/champ:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/shared/install/champ_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/shared/install/champ_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /shared/build/champ_base
+[150.349s] -- Install configuration: ""
+[150.367s] -- Installing: /shared/install/champ_base/share/champ_base/config
+[150.415s] -- Installing: /shared/install/champ_base/share/champ_base/config/ekf
+[150.484s] -- Installing: /shared/install/champ_base/share/champ_base/config/ekf/base_to_footprint.yaml
+[150.620s] -- Installing: /shared/install/champ_base/share/champ_base/config/ekf/footprint_to_odom.yaml
+[150.775s] -- Installing: /shared/install/champ_base/share/champ_base/config/velocity_smoother
+[150.862s] -- Installing: /shared/install/champ_base/share/champ_base/config/velocity_smoother/velocity_smoother.yaml
+[151.017s] -- Installing: /shared/install/champ_base/lib/libquadruped_controller.so
+[152.481s] -- Set non-toolchain portion of runtime path of "/shared/install/champ_base/lib/libquadruped_controller.so" to ""
+[152.520s] -- Installing: /shared/install/champ_base/bin/quadruped_controller_node
+[152.693s] -- Set non-toolchain portion of runtime path of "/shared/install/champ_base/bin/quadruped_controller_node" to ""
+[152.714s] -- Installing: /shared/install/champ_base/lib/libmessage_relay.so
+[154.823s] -- Set non-toolchain portion of runtime path of "/shared/install/champ_base/lib/libmessage_relay.so" to ""
+[154.847s] -- Installing: /shared/install/champ_base/bin/message_relay_node
+[155.030s] -- Set non-toolchain portion of runtime path of "/shared/install/champ_base/bin/message_relay_node" to ""
+[155.054s] -- Installing: /shared/install/champ_base/lib/libstate_estimation.so
+[157.165s] -- Set non-toolchain portion of runtime path of "/shared/install/champ_base/lib/libstate_estimation.so" to ""
+[157.189s] -- Installing: /shared/install/champ_base/bin/state_estimation_node
+[157.404s] -- Set non-toolchain portion of runtime path of "/shared/install/champ_base/bin/state_estimation_node" to ""
+[157.453s] -- Installing: /shared/install/champ_base/lib/champ_base/quadruped_controller_node
+[157.649s] -- Set non-toolchain portion of runtime path of "/shared/install/champ_base/lib/champ_base/quadruped_controller_node" to ""
+[157.700s] -- Installing: /shared/install/champ_base/lib/champ_base/message_relay_node
+[157.910s] -- Set non-toolchain portion of runtime path of "/shared/install/champ_base/lib/champ_base/message_relay_node" to ""
+[157.942s] -- Installing: /shared/install/champ_base/lib/champ_base/state_estimation_node
+[158.140s] -- Set non-toolchain portion of runtime path of "/shared/install/champ_base/lib/champ_base/state_estimation_node" to ""
+[158.223s] -- Installing: /shared/install/champ_base/share/ament_index/resource_index/package_run_dependencies/champ_base
+[158.428s] -- Installing: /shared/install/champ_base/share/ament_index/resource_index/parent_prefix_path/champ_base
+[158.610s] -- Installing: /shared/install/champ_base/share/champ_base/environment/ament_prefix_path.sh
+[158.751s] -- Installing: /shared/install/champ_base/share/champ_base/environment/ament_prefix_path.dsv
+[158.864s] -- Installing: /shared/install/champ_base/share/champ_base/environment/path.sh
+[158.968s] -- Installing: /shared/install/champ_base/share/champ_base/environment/path.dsv
+[159.099s] -- Installing: /shared/install/champ_base/share/champ_base/local_setup.bash
+[159.266s] -- Installing: /shared/install/champ_base/share/champ_base/local_setup.sh
+[159.340s] -- Installing: /shared/install/champ_base/share/champ_base/local_setup.zsh
+[159.461s] -- Installing: /shared/install/champ_base/share/champ_base/local_setup.dsv
+[159.581s] -- Installing: /shared/install/champ_base/share/champ_base/package.dsv
+[159.725s] -- Installing: /shared/install/champ_base/share/ament_index/resource_index/packages/champ_base
+[159.880s] -- Installing: /shared/install/champ_base/share/champ_base/cmake/ament_cmake_export_include_directories-extras.cmake
+[160.013s] -- Installing: /shared/install/champ_base/share/champ_base/cmake/ament_cmake_export_dependencies-extras.cmake
+[160.144s] -- Installing: /shared/install/champ_base/share/champ_base/cmake/champ_baseConfig.cmake
+[160.289s] -- Installing: /shared/install/champ_base/share/champ_base/cmake/champ_baseConfig-version.cmake
+[160.417s] -- Installing: /shared/install/champ_base/share/champ_base/package.xml
+[160.547s] Invoked command in '/shared/build/champ_base' returned '0': AMENT_PREFIX_PATH=/shared/install/champ_msgs:/shared/install/champ:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/shared/install/champ_msgs:/shared/install/champ:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/shared/install/champ_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/shared/install/champ_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /shared/build/champ_base

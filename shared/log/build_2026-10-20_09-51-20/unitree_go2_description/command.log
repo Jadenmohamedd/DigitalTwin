@@ -1,0 +1,6 @@
+Invoking command in '/shared/build/unitree_go2_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /shared/unitree_go2_ros2/unitree_go2_description -DCMAKE_INSTALL_PREFIX=/shared/install/unitree_go2_description
+Invoked command in '/shared/build/unitree_go2_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /shared/unitree_go2_ros2/unitree_go2_description -DCMAKE_INSTALL_PREFIX=/shared/install/unitree_go2_description
+Invoking command in '/shared/build/unitree_go2_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /shared/build/unitree_go2_description -- -j16 -l16
+Invoked command in '/shared/build/unitree_go2_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /shared/build/unitree_go2_description -- -j16 -l16
+Invoking command in '/shared/build/unitree_go2_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /shared/build/unitree_go2_description
+Invoked command in '/shared/build/unitree_go2_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /shared/build/unitree_go2_description

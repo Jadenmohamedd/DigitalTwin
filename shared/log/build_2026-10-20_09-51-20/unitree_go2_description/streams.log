@@ -1,0 +1,63 @@
+[0.112s] Invoking command in '/shared/build/unitree_go2_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /shared/unitree_go2_ros2/unitree_go2_description -DCMAKE_INSTALL_PREFIX=/shared/install/unitree_go2_description
+[0.545s] -- The C compiler identification is GNU 13.3.0
+[0.990s] -- The CXX compiler identification is GNU 13.3.0
+[1.103s] -- Detecting C compiler ABI info
+[2.371s] -- Detecting C compiler ABI info - done
+[2.495s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.500s] -- Detecting C compile features
+[2.503s] -- Detecting C compile features - done
+[2.593s] -- Detecting CXX compiler ABI info
+[3.830s] -- Detecting CXX compiler ABI info - done
+[3.965s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[3.968s] -- Detecting CXX compile features
+[3.972s] -- Detecting CXX compile features - done
+[4.072s] -- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[4.504s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[6.399s] -- Configuring done (6.2s)
+[7.056s] -- Generating done (0.6s)
+[7.435s] -- Build files have been written to: /shared/build/unitree_go2_description
+[7.445s] Invoked command in '/shared/build/unitree_go2_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /shared/unitree_go2_ros2/unitree_go2_description -DCMAKE_INSTALL_PREFIX=/shared/install/unitree_go2_description
+[7.463s] Invoking command in '/shared/build/unitree_go2_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /shared/build/unitree_go2_description -- -j16 -l16
+[7.737s] Invoked command in '/shared/build/unitree_go2_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /shared/build/unitree_go2_description -- -j16 -l16
+[7.767s] Invoking command in '/shared/build/unitree_go2_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /shared/build/unitree_go2_description
+[7.812s] -- Install configuration: ""
+[7.815s] -- Installing: /shared/install/unitree_go2_description/share/unitree_go2_description/worlds
+[7.864s] -- Installing: /shared/install/unitree_go2_description/share/unitree_go2_description/worlds/default.sdf
+[7.978s] -- Installing: /shared/install/unitree_go2_description/share/unitree_go2_description/meshes
+[8.032s] -- Installing: /shared/install/unitree_go2_description/share/unitree_go2_description/meshes/calf.dae
+[8.355s] -- Installing: /shared/install/unitree_go2_description/share/unitree_go2_description/meshes/calf_mirror.dae
+[8.694s] -- Installing: /shared/install/unitree_go2_description/share/unitree_go2_description/meshes/foot.dae
+[8.923s] -- Installing: /shared/install/unitree_go2_description/share/unitree_go2_description/meshes/hip.dae
+[9.806s] -- Installing: /shared/install/unitree_go2_description/share/unitree_go2_description/meshes/hokuyo.dae
+[9.987s] -- Installing: /shared/install/unitree_go2_description/share/unitree_go2_description/meshes/L1_4D_Lidar.dae
+[10.441s] -- Installing: /shared/install/unitree_go2_description/share/unitree_go2_description/meshes/thigh.dae
+[11.272s] -- Installing: /shared/install/unitree_go2_description/share/unitree_go2_description/meshes/thigh_mirror.dae
+[12.103s] -- Installing: /shared/install/unitree_go2_description/share/unitree_go2_description/meshes/trunk.dae
+[14.130s] -- Installing: /shared/install/unitree_go2_description/share/unitree_go2_description/meshes/VLP16_base_1.dae
+[14.307s] -- Installing: /shared/install/unitree_go2_description/share/unitree_go2_description/meshes/VLP16_base_2.dae
+[14.509s] -- Installing: /shared/install/unitree_go2_description/share/unitree_go2_description/meshes/VLP16_scan.dae
+[14.680s] -- Installing: /shared/install/unitree_go2_description/share/unitree_go2_description/urdf
+[14.755s] -- Installing: /shared/install/unitree_go2_description/share/unitree_go2_description/urdf/const.xacro
+[14.902s] -- Installing: /shared/install/unitree_go2_description/share/unitree_go2_description/urdf/leg.xacro
+[15.047s] -- Installing: /shared/install/unitree_go2_description/share/unitree_go2_description/urdf/lidar_4D_lidar.xacro
+[15.232s] -- Installing: /shared/install/unitree_go2_description/share/unitree_go2_description/urdf/materials.xacro
+[15.415s] -- Installing: /shared/install/unitree_go2_description/share/unitree_go2_description/urdf/realsense_d455.xacro
+[15.580s] -- Installing: /shared/install/unitree_go2_description/share/unitree_go2_description/urdf/unitree_go2_gazebo.xacro
+[15.785s] -- Installing: /shared/install/unitree_go2_description/share/unitree_go2_description/urdf/unitree_go2_robot.xacro
+[15.975s] -- Installing: /shared/install/unitree_go2_description/share/unitree_go2_description/urdf/velodyne.xacro
+[16.265s] -- Installing: /shared/install/unitree_go2_description/share/ament_index/resource_index/package_run_dependencies/unitree_go2_description
+[16.495s] -- Installing: /shared/install/unitree_go2_description/share/ament_index/resource_index/parent_prefix_path/unitree_go2_description
+[16.687s] -- Installing: /shared/install/unitree_go2_description/share/unitree_go2_description/environment/ament_prefix_path.sh
+[16.794s] -- Installing: /shared/install/unitree_go2_description/share/unitree_go2_description/environment/ament_prefix_path.dsv
+[16.990s] -- Installing: /shared/install/unitree_go2_description/share/unitree_go2_description/environment/path.sh
+[17.105s] -- Installing: /shared/install/unitree_go2_description/share/unitree_go2_description/environment/path.dsv
+[17.256s] -- Installing: /shared/install/unitree_go2_description/share/unitree_go2_description/local_setup.bash
+[17.385s] -- Installing: /shared/install/unitree_go2_description/share/unitree_go2_description/local_setup.sh
+[17.523s] -- Installing: /shared/install/unitree_go2_description/share/unitree_go2_description/local_setup.zsh
+[17.666s] -- Installing: /shared/install/unitree_go2_description/share/unitree_go2_description/local_setup.dsv
+[17.813s] -- Installing: /shared/install/unitree_go2_description/share/unitree_go2_description/package.dsv
+[17.959s] -- Installing: /shared/install/unitree_go2_description/share/ament_index/resource_index/packages/unitree_go2_description
+[18.127s] -- Installing: /shared/install/unitree_go2_description/share/unitree_go2_description/cmake/unitree_go2_descriptionConfig.cmake
+[18.254s] -- Installing: /shared/install/unitree_go2_description/share/unitree_go2_description/cmake/unitree_go2_descriptionConfig-version.cmake
+[18.384s] -- Installing: /shared/install/unitree_go2_description/share/unitree_go2_description/package.xml
+[18.478s] Invoked command in '/shared/build/unitree_go2_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /shared/build/unitree_go2_description

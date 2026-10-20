@@ -1,0 +1,9 @@
+/shared/build/champ_msgs/rosidl_adapter/champ_msgs:msg/Velocities.idl
+/shared/build/champ_msgs/rosidl_adapter/champ_msgs:msg/PID.idl
+/shared/build/champ_msgs/rosidl_adapter/champ_msgs:msg/Imu.idl
+/shared/build/champ_msgs/rosidl_adapter/champ_msgs:msg/Point.idl
+/shared/build/champ_msgs/rosidl_adapter/champ_msgs:msg/PointArray.idl
+/shared/build/champ_msgs/rosidl_adapter/champ_msgs:msg/Joints.idl
+/shared/build/champ_msgs/rosidl_adapter/champ_msgs:msg/Contacts.idl
+/shared/build/champ_msgs/rosidl_adapter/champ_msgs:msg/ContactsStamped.idl
+/shared/build/champ_msgs/rosidl_adapter/champ_msgs:msg/Pose.idl

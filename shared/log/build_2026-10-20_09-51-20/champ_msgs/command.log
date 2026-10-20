@@ -1,0 +1,6 @@
+Invoking command in '/shared/build/champ_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /shared/unitree_go2_ros2/champ_msgs -DCMAKE_INSTALL_PREFIX=/shared/install/champ_msgs
+Invoked command in '/shared/build/champ_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /shared/unitree_go2_ros2/champ_msgs -DCMAKE_INSTALL_PREFIX=/shared/install/champ_msgs
+Invoking command in '/shared/build/champ_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /shared/build/champ_msgs -- -j16 -l16
+Invoked command in '/shared/build/champ_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /shared/build/champ_msgs -- -j16 -l16
+Invoking command in '/shared/build/champ_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /shared/build/champ_msgs
+Invoked command in '/shared/build/champ_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /shared/build/champ_msgs

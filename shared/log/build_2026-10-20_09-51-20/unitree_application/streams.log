@@ -1,0 +1,56 @@
+[0.242s] Invoking command in '/shared/build/unitree_application': AMENT_PREFIX_PATH=/shared/install/champ_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/shared/install/champ_msgs:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/shared/install/champ_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/shared/install/champ_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake /shared/unitree_go2_ros2/unitree_application -DCMAKE_INSTALL_PREFIX=/shared/install/unitree_application
+[1.008s] -- The C compiler identification is GNU 13.3.0
+[1.621s] -- The CXX compiler identification is GNU 13.3.0
+[1.894s] -- Detecting C compiler ABI info
+[3.891s] -- Detecting C compiler ABI info - done
+[4.036s] -- Check for working C compiler: /usr/bin/cc - skipped
+[4.039s] -- Detecting C compile features
+[4.043s] -- Detecting C compile features - done
+[4.224s] -- Detecting CXX compiler ABI info
+[6.207s] -- Detecting CXX compiler ABI info - done
+[6.342s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[6.346s] -- Detecting CXX compile features
+[6.350s] -- Detecting CXX compile features - done
+[6.557s] -- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[8.203s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[10.186s] -- Found rclcpp: 28.1.22 (/opt/ros/jazzy/share/rclcpp/cmake)
+[11.118s] -- Found rosidl_generator_c: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[11.442s] -- Found rosidl_generator_cpp: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[11.792s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[12.134s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[13.324s] -- Found rmw_implementation_cmake: 7.3.4 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[13.416s] -- Found rmw_fastrtps_cpp: 8.4.4 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[14.558s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[14.686s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[14.819s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[15.694s] -- Found champ_msgs: 0.1.0 (/shared/install/champ_msgs/share/champ_msgs/cmake)
+[16.950s] -- Found ros_gz_interfaces: 1.0.24 (/opt/ros/jazzy/share/ros_gz_interfaces/cmake)
+[18.119s] -- Configuring done (17.7s)
+[19.187s] -- Generating done (0.8s)
+[19.643s] -- Build files have been written to: /shared/build/unitree_application
+[19.663s] Invoked command in '/shared/build/unitree_application' returned '0': AMENT_PREFIX_PATH=/shared/install/champ_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/shared/install/champ_msgs:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/shared/install/champ_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/shared/install/champ_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake /shared/unitree_go2_ros2/unitree_application -DCMAKE_INSTALL_PREFIX=/shared/install/unitree_application
+[19.677s] Invoking command in '/shared/build/unitree_application': AMENT_PREFIX_PATH=/shared/install/champ_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/shared/install/champ_msgs:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/shared/install/champ_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/shared/install/champ_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /shared/build/unitree_application -- -j16 -l16
+[20.512s] [ 50%] [32mBuilding CXX object CMakeFiles/foot_contacts_bridge.dir/src/foot_contacts_bridge.cpp.o[0m
+[63.123s] [100%] [32m[1mLinking CXX executable foot_contacts_bridge[0m
+[75.385s] [100%] Built target foot_contacts_bridge
+[75.642s] Invoked command in '/shared/build/unitree_application' returned '0': AMENT_PREFIX_PATH=/shared/install/champ_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/shared/install/champ_msgs:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/shared/install/champ_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/shared/install/champ_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /shared/build/unitree_application -- -j16 -l16
+[75.702s] Invoking command in '/shared/build/unitree_application': AMENT_PREFIX_PATH=/shared/install/champ_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/shared/install/champ_msgs:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/shared/install/champ_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/shared/install/champ_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /shared/build/unitree_application
+[75.941s] -- Install configuration: ""
+[75.977s] -- Installing: /shared/install/unitree_application/lib/unitree_application/foot_contacts_bridge
+[76.889s] -- Set non-toolchain portion of runtime path of "/shared/install/unitree_application/lib/unitree_application/foot_contacts_bridge" to ""
+[76.965s] -- Installing: /shared/install/unitree_application/share/ament_index/resource_index/package_run_dependencies/unitree_application
+[77.156s] -- Installing: /shared/install/unitree_application/share/ament_index/resource_index/parent_prefix_path/unitree_application
+[77.349s] -- Installing: /shared/install/unitree_application/share/unitree_application/environment/ament_prefix_path.sh
+[77.466s] -- Installing: /shared/install/unitree_application/share/unitree_application/environment/ament_prefix_path.dsv
+[77.587s] -- Installing: /shared/install/unitree_application/share/unitree_application/environment/path.sh
+[77.703s] -- Installing: /shared/install/unitree_application/share/unitree_application/environment/path.dsv
+[77.832s] -- Installing: /shared/install/unitree_application/share/unitree_application/local_setup.bash
+[77.944s] -- Installing: /shared/install/unitree_application/share/unitree_application/local_setup.sh
+[78.063s] -- Installing: /shared/install/unitree_application/share/unitree_application/local_setup.zsh
+[78.181s] -- Installing: /shared/install/unitree_application/share/unitree_application/local_setup.dsv
+[78.297s] -- Installing: /shared/install/unitree_application/share/unitree_application/package.dsv
+[78.462s] -- Installing: /shared/install/unitree_application/share/ament_index/resource_index/packages/unitree_application
+[78.653s] -- Installing: /shared/install/unitree_application/share/unitree_application/cmake/unitree_applicationConfig.cmake
+[78.771s] -- Installing: /shared/install/unitree_application/share/unitree_application/cmake/unitree_applicationConfig-version.cmake
+[78.906s] -- Installing: /shared/install/unitree_application/share/unitree_application/package.xml
+[79.015s] Invoked command in '/shared/build/unitree_application' returned '0': AMENT_PREFIX_PATH=/shared/install/champ_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/shared/install/champ_msgs:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/shared/install/champ_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/shared/install/champ_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /shared/build/unitree_application

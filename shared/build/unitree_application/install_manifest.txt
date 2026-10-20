@@ -1,0 +1,16 @@
+/shared/install/unitree_application/lib/unitree_application/foot_contacts_bridge
+/shared/install/unitree_application/share/ament_index/resource_index/package_run_dependencies/unitree_application
+/shared/install/unitree_application/share/ament_index/resource_index/parent_prefix_path/unitree_application
+/shared/install/unitree_application/share/unitree_application/environment/ament_prefix_path.sh
+/shared/install/unitree_application/share/unitree_application/environment/ament_prefix_path.dsv
+/shared/install/unitree_application/share/unitree_application/environment/path.sh
+/shared/install/unitree_application/share/unitree_application/environment/path.dsv
+/shared/install/unitree_application/share/unitree_application/local_setup.bash
+/shared/install/unitree_application/share/unitree_application/local_setup.sh
+/shared/install/unitree_application/share/unitree_application/local_setup.zsh
+/shared/install/unitree_application/share/unitree_application/local_setup.dsv
+/shared/install/unitree_application/share/unitree_application/package.dsv
+/shared/install/unitree_application/share/ament_index/resource_index/packages/unitree_application
+/shared/install/unitree_application/share/unitree_application/cmake/unitree_applicationConfig.cmake
+/shared/install/unitree_application/share/unitree_application/cmake/unitree_applicationConfig-version.cmake
+/shared/install/unitree_application/share/unitree_application/package.xml

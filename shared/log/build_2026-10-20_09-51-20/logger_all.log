@@ -1,0 +1,490 @@
+[0.404s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--base-paths', 'unitree_go2_ros2', '--parallel-workers', '2']
+[0.405s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=2, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['unitree_go2_ros2'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x795052235760>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x795052392210>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x795052392210>>)
+[0.530s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.532s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.533s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.534s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.535s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.536s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/shared/unitree_go2_ros2'
+[0.542s] Level 1:colcon.colcon_core.package_identification:_identify(unitree_go2_ros2) by extensions ['ignore', 'ignore_ament_install']
+[0.543s] Level 1:colcon.colcon_core.package_identification:_identify(unitree_go2_ros2) by extension 'ignore'
+[0.546s] Level 1:colcon.colcon_core.package_identification:_identify(unitree_go2_ros2) by extension 'ignore_ament_install'
+[0.549s] Level 1:colcon.colcon_core.package_identification:_identify(unitree_go2_ros2) by extensions ['colcon_pkg']
+[0.550s] Level 1:colcon.colcon_core.package_identification:_identify(unitree_go2_ros2) by extension 'colcon_pkg'
+[0.552s] Level 1:colcon.colcon_core.package_identification:_identify(unitree_go2_ros2) by extensions ['colcon_meta']
+[0.553s] Level 1:colcon.colcon_core.package_identification:_identify(unitree_go2_ros2) by extension 'colcon_meta'
+[0.555s] Level 1:colcon.colcon_core.package_identification:_identify(unitree_go2_ros2) by extensions ['ros']
+[0.556s] Level 1:colcon.colcon_core.package_identification:_identify(unitree_go2_ros2) by extension 'ros'
+[0.607s] Level 1:colcon.colcon_core.package_identification:_identify(unitree_go2_ros2) by extensions ['cmake', 'python']
+[0.608s] Level 1:colcon.colcon_core.package_identification:_identify(unitree_go2_ros2) by extension 'cmake'
+[0.610s] Level 1:colcon.colcon_core.package_identification:_identify(unitree_go2_ros2) by extension 'python'
+[0.612s] Level 1:colcon.colcon_core.package_identification:_identify(unitree_go2_ros2) by extensions ['python_setup_py']
+[0.613s] Level 1:colcon.colcon_core.package_identification:_identify(unitree_go2_ros2) by extension 'python_setup_py'
+[0.621s] Level 1:colcon.colcon_core.package_identification:_identify(unitree_go2_ros2/champ) by extensions ['ignore', 'ignore_ament_install']
+[0.622s] Level 1:colcon.colcon_core.package_identification:_identify(unitree_go2_ros2/champ) by extension 'ignore'
+[0.624s] Level 1:colcon.colcon_core.package_identification:_identify(unitree_go2_ros2/champ) by extension 'ignore_ament_install'
+[0.629s] Level 1:colcon.colcon_core.package_identification:_identify(unitree_go2_ros2/champ) by extensions ['colcon_pkg']
+[0.630s] Level 1:colcon.colcon_core.package_identification:_identify(unitree_go2_ros2/champ) by extension 'colcon_pkg'
+[0.633s] Level 1:colcon.colcon_core.package_identification:_identify(unitree_go2_ros2/champ) by extensions ['colcon_meta']
+[0.634s] Level 1:colcon.colcon_core.package_identification:_identify(unitree_go2_ros2/champ) by extension 'colcon_meta'
+[0.637s] Level 1:colcon.colcon_core.package_identification:_identify(unitree_go2_ros2/champ) by extensions ['ros']
+[0.638s] Level 1:colcon.colcon_core.package_identification:_identify(unitree_go2_ros2/champ) by extension 'ros'
+[0.665s] DEBUG:colcon.colcon_core.package_identification:Package 'unitree_go2_ros2/champ' with type 'ros.ament_cmake' and name 'champ'
+[0.674s] Level 1:colcon.colcon_core.package_identification:_identify(unitree_go2_ros2/champ_base) by extensions ['ignore', 'ignore_ament_install']
+[0.681s] Level 1:colcon.colcon_core.package_identification:_identify(unitree_go2_ros2/champ_base) by extension 'ignore'
+[0.684s] Level 1:colcon.colcon_core.package_identification:_identify(unitree_go2_ros2/champ_base) by extension 'ignore_ament_install'
+[0.689s] Level 1:colcon.colcon_core.package_identification:_identify(unitree_go2_ros2/champ_base) by extensions ['colcon_pkg']
+[0.690s] Level 1:colcon.colcon_core.package_identification:_identify(unitree_go2_ros2/champ_base) by extension 'colcon_pkg'
+[0.693s] Level 1:colcon.colcon_core.package_identification:_identify(unitree_go2_ros2/champ_base) by extensions ['colcon_meta']
+[0.694s] Level 1:colcon.colcon_core.package_identification:_identify(unitree_go2_ros2/champ_base) by extension 'colcon_meta'
+[0.698s] Level 1:colcon.colcon_core.package_identification:_identify(unitree_go2_ros2/champ_base) by extensions ['ros']
+[0.699s] Level 1:colcon.colcon_core.package_identification:_identify(unitree_go2_ros2/champ_base) by extension 'ros'
+[0.725s] DEBUG:colcon.colcon_core.package_identification:Package 'unitree_go2_ros2/champ_base' with type 'ros.ament_cmake' and name 'champ_base'
+[0.733s] Level 1:colcon.colcon_core.package_identification:_identify(unitree_go2_ros2/champ_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.734s] Level 1:colcon.colcon_core.package_identification:_identify(unitree_go2_ros2/champ_msgs) by extension 'ignore'
+[0.738s] Level 1:colcon.colcon_core.package_identification:_identify(unitree_go2_ros2/champ_msgs) by extension 'ignore_ament_install'
+[0.743s] Level 1:colcon.colcon_core.package_identification:_identify(unitree_go2_ros2/champ_msgs) by extensions ['colcon_pkg']
+[0.744s] Level 1:colcon.colcon_core.package_identification:_identify(unitree_go2_ros2/champ_msgs) by extension 'colcon_pkg'
+[0.748s] Level 1:colcon.colcon_core.package_identification:_identify(unitree_go2_ros2/champ_msgs) by extensions ['colcon_meta']
+[0.749s] Level 1:colcon.colcon_core.package_identification:_identify(unitree_go2_ros2/champ_msgs) by extension 'colcon_meta'
+[0.754s] Level 1:colcon.colcon_core.package_identification:_identify(unitree_go2_ros2/champ_msgs) by extensions ['ros']
+[0.754s] Level 1:colcon.colcon_core.package_identification:_identify(unitree_go2_ros2/champ_msgs) by extension 'ros'
+[0.779s] DEBUG:colcon.colcon_core.package_identification:Package 'unitree_go2_ros2/champ_msgs' with type 'ros.ament_cmake' and name 'champ_msgs'
+[0.787s] Level 1:colcon.colcon_core.package_identification:_identify(unitree_go2_ros2/docs) by extensions ['ignore', 'ignore_ament_install']
+[0.788s] Level 1:colcon.colcon_core.package_identification:_identify(unitree_go2_ros2/docs) by extension 'ignore'
+[0.790s] Level 1:colcon.colcon_core.package_identification:_identify(unitree_go2_ros2/docs) by extension 'ignore_ament_install'
+[0.795s] Level 1:colcon.colcon_core.package_identification:_identify(unitree_go2_ros2/docs) by extensions ['colcon_pkg']
+[0.796s] Level 1:colcon.colcon_core.package_identification:_identify(unitree_go2_ros2/docs) by extension 'colcon_pkg'
+[0.798s] Level 1:colcon.colcon_core.package_identification:_identify(unitree_go2_ros2/docs) by extensions ['colcon_meta']
+[0.799s] Level 1:colcon.colcon_core.package_identification:_identify(unitree_go2_ros2/docs) by extension 'colcon_meta'
+[0.803s] Level 1:colcon.colcon_core.package_identification:_identify(unitree_go2_ros2/docs) by extensions ['ros']
+[0.805s] Level 1:colcon.colcon_core.package_identification:_identify(unitree_go2_ros2/docs) by extension 'ros'
+[0.816s] Level 1:colcon.colcon_core.package_identification:_identify(unitree_go2_ros2/docs) by extensions ['cmake', 'python']
+[0.817s] Level 1:colcon.colcon_core.package_identification:_identify(unitree_go2_ros2/docs) by extension 'cmake'
+[0.819s] Level 1:colcon.colcon_core.package_identification:_identify(unitree_go2_ros2/docs) by extension 'python'
+[0.822s] Level 1:colcon.colcon_core.package_identification:_identify(unitree_go2_ros2/docs) by extensions ['python_setup_py']
+[0.823s] Level 1:colcon.colcon_core.package_identification:_identify(unitree_go2_ros2/docs) by extension 'python_setup_py'
+[0.833s] Level 1:colcon.colcon_core.package_identification:_identify(unitree_go2_ros2/unitree_application) by extensions ['ignore', 'ignore_ament_install']
+[0.834s] Level 1:colcon.colcon_core.package_identification:_identify(unitree_go2_ros2/unitree_application) by extension 'ignore'
+[0.837s] Level 1:colcon.colcon_core.package_identification:_identify(unitree_go2_ros2/unitree_application) by extension 'ignore_ament_install'
+[0.842s] Level 1:colcon.colcon_core.package_identification:_identify(unitree_go2_ros2/unitree_application) by extensions ['colcon_pkg']
+[0.843s] Level 1:colcon.colcon_core.package_identification:_identify(unitree_go2_ros2/unitree_application) by extension 'colcon_pkg'
+[0.846s] Level 1:colcon.colcon_core.package_identification:_identify(unitree_go2_ros2/unitree_application) by extensions ['colcon_meta']
+[0.846s] Level 1:colcon.colcon_core.package_identification:_identify(unitree_go2_ros2/unitree_application) by extension 'colcon_meta'
+[0.850s] Level 1:colcon.colcon_core.package_identification:_identify(unitree_go2_ros2/unitree_application) by extensions ['ros']
+[0.851s] Level 1:colcon.colcon_core.package_identification:_identify(unitree_go2_ros2/unitree_application) by extension 'ros'
+[0.872s] DEBUG:colcon.colcon_core.package_identification:Package 'unitree_go2_ros2/unitree_application' with type 'ros.ament_cmake' and name 'unitree_application'
+[0.880s] Level 1:colcon.colcon_core.package_identification:_identify(unitree_go2_ros2/unitree_go2_description) by extensions ['ignore', 'ignore_ament_install']
+[0.881s] Level 1:colcon.colcon_core.package_identification:_identify(unitree_go2_ros2/unitree_go2_description) by extension 'ignore'
+[0.884s] Level 1:colcon.colcon_core.package_identification:_identify(unitree_go2_ros2/unitree_go2_description) by extension 'ignore_ament_install'
+[0.889s] Level 1:colcon.colcon_core.package_identification:_identify(unitree_go2_ros2/unitree_go2_description) by extensions ['colcon_pkg']
+[0.889s] Level 1:colcon.colcon_core.package_identification:_identify(unitree_go2_ros2/unitree_go2_description) by extension 'colcon_pkg'
+[0.892s] Level 1:colcon.colcon_core.package_identification:_identify(unitree_go2_ros2/unitree_go2_description) by extensions ['colcon_meta']
+[0.893s] Level 1:colcon.colcon_core.package_identification:_identify(unitree_go2_ros2/unitree_go2_description) by extension 'colcon_meta'
+[0.897s] Level 1:colcon.colcon_core.package_identification:_identify(unitree_go2_ros2/unitree_go2_description) by extensions ['ros']
+[0.898s] Level 1:colcon.colcon_core.package_identification:_identify(unitree_go2_ros2/unitree_go2_description) by extension 'ros'
+[0.921s] DEBUG:colcon.colcon_core.package_identification:Package 'unitree_go2_ros2/unitree_go2_description' with type 'ros.ament_cmake' and name 'unitree_go2_description'
+[0.928s] Level 1:colcon.colcon_core.package_identification:_identify(unitree_go2_ros2/unitree_go2_sim) by extensions ['ignore', 'ignore_ament_install']
+[0.929s] Level 1:colcon.colcon_core.package_identification:_identify(unitree_go2_ros2/unitree_go2_sim) by extension 'ignore'
+[0.932s] Level 1:colcon.colcon_core.package_identification:_identify(unitree_go2_ros2/unitree_go2_sim) by extension 'ignore_ament_install'
+[0.937s] Level 1:colcon.colcon_core.package_identification:_identify(unitree_go2_ros2/unitree_go2_sim) by extensions ['colcon_pkg']
+[0.938s] Level 1:colcon.colcon_core.package_identification:_identify(unitree_go2_ros2/unitree_go2_sim) by extension 'colcon_pkg'
+[0.941s] Level 1:colcon.colcon_core.package_identification:_identify(unitree_go2_ros2/unitree_go2_sim) by extensions ['colcon_meta']
+[0.942s] Level 1:colcon.colcon_core.package_identification:_identify(unitree_go2_ros2/unitree_go2_sim) by extension 'colcon_meta'
+[0.946s] Level 1:colcon.colcon_core.package_identification:_identify(unitree_go2_ros2/unitree_go2_sim) by extensions ['ros']
+[0.946s] Level 1:colcon.colcon_core.package_identification:_identify(unitree_go2_ros2/unitree_go2_sim) by extension 'ros'
+[0.970s] DEBUG:colcon.colcon_core.package_identification:Package 'unitree_go2_ros2/unitree_go2_sim' with type 'ros.ament_cmake' and name 'unitree_go2_sim'
+[0.971s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.030s] Level 5:colcon.colcon_core.verb:set package 'champ' build argument 'cmake_args' from command line to 'None'
+[1.031s] Level 5:colcon.colcon_core.verb:set package 'champ' build argument 'cmake_target' from command line to 'None'
+[1.058s] Level 5:colcon.colcon_core.verb:set package 'champ' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.059s] Level 5:colcon.colcon_core.verb:set package 'champ' build argument 'cmake_clean_cache' from command line to 'False'
+[1.060s] Level 5:colcon.colcon_core.verb:set package 'champ' build argument 'cmake_clean_first' from command line to 'False'
+[1.060s] Level 5:colcon.colcon_core.verb:set package 'champ' build argument 'cmake_force_configure' from command line to 'False'
+[1.061s] Level 5:colcon.colcon_core.verb:set package 'champ' build argument 'ament_cmake_args' from command line to 'None'
+[1.062s] Level 5:colcon.colcon_core.verb:set package 'champ' build argument 'catkin_cmake_args' from command line to 'None'
+[1.063s] Level 5:colcon.colcon_core.verb:set package 'champ' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.063s] DEBUG:colcon.colcon_core.verb:Building package 'champ' with the following arguments: {'ament_cmake_args': None, 'build_base': '/shared/build/champ', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/shared/install/champ', 'merge_install': False, 'path': '/shared/unitree_go2_ros2/champ', 'symlink_install': False, 'test_result_base': None}
+[1.065s] Level 5:colcon.colcon_core.verb:set package 'champ_msgs' build argument 'cmake_args' from command line to 'None'
+[1.065s] Level 5:colcon.colcon_core.verb:set package 'champ_msgs' build argument 'cmake_target' from command line to 'None'
+[1.066s] Level 5:colcon.colcon_core.verb:set package 'champ_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.067s] Level 5:colcon.colcon_core.verb:set package 'champ_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[1.068s] Level 5:colcon.colcon_core.verb:set package 'champ_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[1.069s] Level 5:colcon.colcon_core.verb:set package 'champ_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[1.070s] Level 5:colcon.colcon_core.verb:set package 'champ_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[1.070s] Level 5:colcon.colcon_core.verb:set package 'champ_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[1.071s] Level 5:colcon.colcon_core.verb:set package 'champ_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.072s] DEBUG:colcon.colcon_core.verb:Building package 'champ_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/shared/build/champ_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/shared/install/champ_msgs', 'merge_install': False, 'path': '/shared/unitree_go2_ros2/champ_msgs', 'symlink_install': False, 'test_result_base': None}
+[1.073s] Level 5:colcon.colcon_core.verb:set package 'unitree_go2_description' build argument 'cmake_args' from command line to 'None'
+[1.074s] Level 5:colcon.colcon_core.verb:set package 'unitree_go2_description' build argument 'cmake_target' from command line to 'None'
+[1.075s] Level 5:colcon.colcon_core.verb:set package 'unitree_go2_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.075s] Level 5:colcon.colcon_core.verb:set package 'unitree_go2_description' build argument 'cmake_clean_cache' from command line to 'False'
+[1.076s] Level 5:colcon.colcon_core.verb:set package 'unitree_go2_description' build argument 'cmake_clean_first' from command line to 'False'
+[1.077s] Level 5:colcon.colcon_core.verb:set package 'unitree_go2_description' build argument 'cmake_force_configure' from command line to 'False'
+[1.078s] Level 5:colcon.colcon_core.verb:set package 'unitree_go2_description' build argument 'ament_cmake_args' from command line to 'None'
+[1.079s] Level 5:colcon.colcon_core.verb:set package 'unitree_go2_description' build argument 'catkin_cmake_args' from command line to 'None'
+[1.079s] Level 5:colcon.colcon_core.verb:set package 'unitree_go2_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.080s] DEBUG:colcon.colcon_core.verb:Building package 'unitree_go2_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/shared/build/unitree_go2_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/shared/install/unitree_go2_description', 'merge_install': False, 'path': '/shared/unitree_go2_ros2/unitree_go2_description', 'symlink_install': False, 'test_result_base': None}
+[1.082s] Level 5:colcon.colcon_core.verb:set package 'champ_base' build argument 'cmake_args' from command line to 'None'
+[1.083s] Level 5:colcon.colcon_core.verb:set package 'champ_base' build argument 'cmake_target' from command line to 'None'
+[1.084s] Level 5:colcon.colcon_core.verb:set package 'champ_base' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.084s] Level 5:colcon.colcon_core.verb:set package 'champ_base' build argument 'cmake_clean_cache' from command line to 'False'
+[1.085s] Level 5:colcon.colcon_core.verb:set package 'champ_base' build argument 'cmake_clean_first' from command line to 'False'
+[1.086s] Level 5:colcon.colcon_core.verb:set package 'champ_base' build argument 'cmake_force_configure' from command line to 'False'
+[1.087s] Level 5:colcon.colcon_core.verb:set package 'champ_base' build argument 'ament_cmake_args' from command line to 'None'
+[1.087s] Level 5:colcon.colcon_core.verb:set package 'champ_base' build argument 'catkin_cmake_args' from command line to 'None'
+[1.088s] Level 5:colcon.colcon_core.verb:set package 'champ_base' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.089s] DEBUG:colcon.colcon_core.verb:Building package 'champ_base' with the following arguments: {'ament_cmake_args': None, 'build_base': '/shared/build/champ_base', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/shared/install/champ_base', 'merge_install': False, 'path': '/shared/unitree_go2_ros2/champ_base', 'symlink_install': False, 'test_result_base': None}
+[1.091s] Level 5:colcon.colcon_core.verb:set package 'unitree_application' build argument 'cmake_args' from command line to 'None'
+[1.091s] Level 5:colcon.colcon_core.verb:set package 'unitree_application' build argument 'cmake_target' from command line to 'None'
+[1.092s] Level 5:colcon.colcon_core.verb:set package 'unitree_application' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.093s] Level 5:colcon.colcon_core.verb:set package 'unitree_application' build argument 'cmake_clean_cache' from command line to 'False'
+[1.094s] Level 5:colcon.colcon_core.verb:set package 'unitree_application' build argument 'cmake_clean_first' from command line to 'False'
+[1.094s] Level 5:colcon.colcon_core.verb:set package 'unitree_application' build argument 'cmake_force_configure' from command line to 'False'
+[1.095s] Level 5:colcon.colcon_core.verb:set package 'unitree_application' build argument 'ament_cmake_args' from command line to 'None'
+[1.096s] Level 5:colcon.colcon_core.verb:set package 'unitree_application' build argument 'catkin_cmake_args' from command line to 'None'
+[1.097s] Level 5:colcon.colcon_core.verb:set package 'unitree_application' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.097s] DEBUG:colcon.colcon_core.verb:Building package 'unitree_application' with the following arguments: {'ament_cmake_args': None, 'build_base': '/shared/build/unitree_application', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/shared/install/unitree_application', 'merge_install': False, 'path': '/shared/unitree_go2_ros2/unitree_application', 'symlink_install': False, 'test_result_base': None}
+[1.099s] Level 5:colcon.colcon_core.verb:set package 'unitree_go2_sim' build argument 'cmake_args' from command line to 'None'
+[1.100s] Level 5:colcon.colcon_core.verb:set package 'unitree_go2_sim' build argument 'cmake_target' from command line to 'None'
+[1.101s] Level 5:colcon.colcon_core.verb:set package 'unitree_go2_sim' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.102s] Level 5:colcon.colcon_core.verb:set package 'unitree_go2_sim' build argument 'cmake_clean_cache' from command line to 'False'
+[1.103s] Level 5:colcon.colcon_core.verb:set package 'unitree_go2_sim' build argument 'cmake_clean_first' from command line to 'False'
+[1.104s] Level 5:colcon.colcon_core.verb:set package 'unitree_go2_sim' build argument 'cmake_force_configure' from command line to 'False'
+[1.104s] Level 5:colcon.colcon_core.verb:set package 'unitree_go2_sim' build argument 'ament_cmake_args' from command line to 'None'
+[1.105s] Level 5:colcon.colcon_core.verb:set package 'unitree_go2_sim' build argument 'catkin_cmake_args' from command line to 'None'
+[1.107s] Level 5:colcon.colcon_core.verb:set package 'unitree_go2_sim' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.107s] DEBUG:colcon.colcon_core.verb:Building package 'unitree_go2_sim' with the following arguments: {'ament_cmake_args': None, 'build_base': '/shared/build/unitree_go2_sim', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/shared/install/unitree_go2_sim', 'merge_install': False, 'path': '/shared/unitree_go2_ros2/unitree_go2_sim', 'symlink_install': False, 'test_result_base': None}
+[1.108s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[1.111s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[1.113s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/shared/unitree_go2_ros2/champ_msgs' with build type 'ament_cmake'
+[1.113s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/shared/unitree_go2_ros2/champ_msgs'
+[1.135s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.137s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.138s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.200s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/shared/unitree_go2_ros2/champ' with build type 'ament_cmake'
+[1.203s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/shared/unitree_go2_ros2/champ'
+[1.204s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.205s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.378s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/shared/build/champ_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /shared/unitree_go2_ros2/champ_msgs -DCMAKE_INSTALL_PREFIX=/shared/install/champ_msgs
+[1.459s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/shared/build/champ': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /shared/unitree_go2_ros2/champ -DCMAKE_INSTALL_PREFIX=/shared/install/champ
+[15.464s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/shared/build/champ' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /shared/unitree_go2_ros2/champ -DCMAKE_INSTALL_PREFIX=/shared/install/champ
+[15.480s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/shared/build/champ': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /shared/build/champ -- -j16 -l16
+[15.812s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/shared/build/champ' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /shared/build/champ -- -j16 -l16
+[15.909s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/shared/build/champ': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /shared/build/champ
+[23.207s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(champ)
+[23.211s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/shared/build/champ' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /shared/build/champ
+[23.235s] Level 1:colcon.colcon_core.environment:checking '/shared/install/champ' for CMake module files
+[23.431s] Level 1:colcon.colcon_core.environment:checking '/shared/install/champ' for CMake config files
+[23.624s] Level 1:colcon.colcon_core.shell:create_environment_hook('champ', 'cmake_prefix_path')
+[23.626s] INFO:colcon.colcon_core.shell:Creating environment hook '/shared/install/champ/share/champ/hook/cmake_prefix_path.ps1'
+[23.661s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/shared/install/champ/share/champ/hook/cmake_prefix_path.dsv'
+[23.686s] INFO:colcon.colcon_core.shell:Creating environment hook '/shared/install/champ/share/champ/hook/cmake_prefix_path.sh'
+[23.722s] Level 1:colcon.colcon_core.environment:checking '/shared/install/champ/bin'
+[23.725s] Level 1:colcon.colcon_core.environment:checking '/shared/install/champ/lib/pkgconfig/champ.pc'
+[23.732s] Level 1:colcon.colcon_core.environment:checking '/shared/install/champ/lib/python3.12/site-packages'
+[23.736s] Level 1:colcon.colcon_core.environment:checking '/shared/install/champ/bin'
+[23.739s] INFO:colcon.colcon_core.shell:Creating package script '/shared/install/champ/share/champ/package.ps1'
+[23.763s] INFO:colcon.colcon_core.shell:Creating package descriptor '/shared/install/champ/share/champ/package.dsv'
+[23.783s] INFO:colcon.colcon_core.shell:Creating package script '/shared/install/champ/share/champ/package.sh'
+[23.808s] INFO:colcon.colcon_core.shell:Creating package script '/shared/install/champ/share/champ/package.bash'
+[23.833s] INFO:colcon.colcon_core.shell:Creating package script '/shared/install/champ/share/champ/package.zsh'
+[23.856s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/shared/install/champ/share/colcon-core/packages/champ)
+[23.904s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(champ)
+[23.906s] Level 1:colcon.colcon_core.environment:checking '/shared/install/champ' for CMake module files
+[24.063s] Level 1:colcon.colcon_core.environment:checking '/shared/install/champ' for CMake config files
+[24.292s] Level 1:colcon.colcon_core.shell:create_environment_hook('champ', 'cmake_prefix_path')
+[24.293s] INFO:colcon.colcon_core.shell:Creating environment hook '/shared/install/champ/share/champ/hook/cmake_prefix_path.ps1'
+[24.322s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/shared/install/champ/share/champ/hook/cmake_prefix_path.dsv'
+[24.351s] INFO:colcon.colcon_core.shell:Creating environment hook '/shared/install/champ/share/champ/hook/cmake_prefix_path.sh'
+[24.380s] Level 1:colcon.colcon_core.environment:checking '/shared/install/champ/bin'
+[24.383s] Level 1:colcon.colcon_core.environment:checking '/shared/install/champ/lib/pkgconfig/champ.pc'
+[24.387s] Level 1:colcon.colcon_core.environment:checking '/shared/install/champ/lib/python3.12/site-packages'
+[24.390s] Level 1:colcon.colcon_core.environment:checking '/shared/install/champ/bin'
+[24.393s] INFO:colcon.colcon_core.shell:Creating package script '/shared/install/champ/share/champ/package.ps1'
+[24.418s] INFO:colcon.colcon_core.shell:Creating package descriptor '/shared/install/champ/share/champ/package.dsv'
+[24.439s] INFO:colcon.colcon_core.shell:Creating package script '/shared/install/champ/share/champ/package.sh'
+[24.460s] INFO:colcon.colcon_core.shell:Creating package script '/shared/install/champ/share/champ/package.bash'
+[24.482s] INFO:colcon.colcon_core.shell:Creating package script '/shared/install/champ/share/champ/package.zsh'
+[24.504s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/shared/install/champ/share/colcon-core/packages/champ)
+[24.523s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/shared/unitree_go2_ros2/unitree_go2_description' with build type 'ament_cmake'
+[24.524s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/shared/unitree_go2_ros2/unitree_go2_description'
+[24.526s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[24.527s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[24.657s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/shared/build/unitree_go2_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /shared/unitree_go2_ros2/unitree_go2_description -DCMAKE_INSTALL_PREFIX=/shared/install/unitree_go2_description
+[31.989s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/shared/build/unitree_go2_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /shared/unitree_go2_ros2/unitree_go2_description -DCMAKE_INSTALL_PREFIX=/shared/install/unitree_go2_description
+[32.008s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/shared/build/unitree_go2_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /shared/build/unitree_go2_description -- -j16 -l16
+[32.281s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/shared/build/unitree_go2_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /shared/build/unitree_go2_description -- -j16 -l16
+[32.312s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/shared/build/unitree_go2_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /shared/build/unitree_go2_description
+[43.020s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(unitree_go2_description)
+[43.022s] Level 1:colcon.colcon_core.environment:checking '/shared/install/unitree_go2_description' for CMake module files
+[43.023s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/shared/build/unitree_go2_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /shared/build/unitree_go2_description
+[43.144s] Level 1:colcon.colcon_core.environment:checking '/shared/install/unitree_go2_description' for CMake config files
+[43.241s] Level 1:colcon.colcon_core.shell:create_environment_hook('unitree_go2_description', 'cmake_prefix_path')
+[43.243s] INFO:colcon.colcon_core.shell:Creating environment hook '/shared/install/unitree_go2_description/share/unitree_go2_description/hook/cmake_prefix_path.ps1'
+[43.264s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/shared/install/unitree_go2_description/share/unitree_go2_description/hook/cmake_prefix_path.dsv'
+[43.288s] INFO:colcon.colcon_core.shell:Creating environment hook '/shared/install/unitree_go2_description/share/unitree_go2_description/hook/cmake_prefix_path.sh'
+[43.317s] Level 1:colcon.colcon_core.environment:checking '/shared/install/unitree_go2_description/bin'
+[43.320s] Level 1:colcon.colcon_core.environment:checking '/shared/install/unitree_go2_description/lib/pkgconfig/unitree_go2_description.pc'
+[43.323s] Level 1:colcon.colcon_core.environment:checking '/shared/install/unitree_go2_description/lib/python3.12/site-packages'
+[43.326s] Level 1:colcon.colcon_core.environment:checking '/shared/install/unitree_go2_description/bin'
+[43.329s] INFO:colcon.colcon_core.shell:Creating package script '/shared/install/unitree_go2_description/share/unitree_go2_description/package.ps1'
+[43.350s] INFO:colcon.colcon_core.shell:Creating package descriptor '/shared/install/unitree_go2_description/share/unitree_go2_description/package.dsv'
+[43.371s] INFO:colcon.colcon_core.shell:Creating package script '/shared/install/unitree_go2_description/share/unitree_go2_description/package.sh'
+[43.391s] INFO:colcon.colcon_core.shell:Creating package script '/shared/install/unitree_go2_description/share/unitree_go2_description/package.bash'
+[43.412s] INFO:colcon.colcon_core.shell:Creating package script '/shared/install/unitree_go2_description/share/unitree_go2_description/package.zsh'
+[43.435s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/shared/install/unitree_go2_description/share/colcon-core/packages/unitree_go2_description)
+[43.482s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(unitree_go2_description)
+[43.484s] Level 1:colcon.colcon_core.environment:checking '/shared/install/unitree_go2_description' for CMake module files
+[43.631s] Level 1:colcon.colcon_core.environment:checking '/shared/install/unitree_go2_description' for CMake config files
+[43.839s] Level 1:colcon.colcon_core.shell:create_environment_hook('unitree_go2_description', 'cmake_prefix_path')
+[43.840s] INFO:colcon.colcon_core.shell:Creating environment hook '/shared/install/unitree_go2_description/share/unitree_go2_description/hook/cmake_prefix_path.ps1'
+[43.873s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/shared/install/unitree_go2_description/share/unitree_go2_description/hook/cmake_prefix_path.dsv'
+[43.901s] INFO:colcon.colcon_core.shell:Creating environment hook '/shared/install/unitree_go2_description/share/unitree_go2_description/hook/cmake_prefix_path.sh'
+[43.935s] Level 1:colcon.colcon_core.environment:checking '/shared/install/unitree_go2_description/bin'
+[43.938s] Level 1:colcon.colcon_core.environment:checking '/shared/install/unitree_go2_description/lib/pkgconfig/unitree_go2_description.pc'
+[43.943s] Level 1:colcon.colcon_core.environment:checking '/shared/install/unitree_go2_description/lib/python3.12/site-packages'
+[43.947s] Level 1:colcon.colcon_core.environment:checking '/shared/install/unitree_go2_description/bin'
+[43.951s] INFO:colcon.colcon_core.shell:Creating package script '/shared/install/unitree_go2_description/share/unitree_go2_description/package.ps1'
+[43.972s] INFO:colcon.colcon_core.shell:Creating package descriptor '/shared/install/unitree_go2_description/share/unitree_go2_description/package.dsv'
+[43.992s] INFO:colcon.colcon_core.shell:Creating package script '/shared/install/unitree_go2_description/share/unitree_go2_description/package.sh'
+[44.013s] INFO:colcon.colcon_core.shell:Creating package script '/shared/install/unitree_go2_description/share/unitree_go2_description/package.bash'
+[44.033s] INFO:colcon.colcon_core.shell:Creating package script '/shared/install/unitree_go2_description/share/unitree_go2_description/package.zsh'
+[44.056s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/shared/install/unitree_go2_description/share/colcon-core/packages/unitree_go2_description)
+[57.970s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/shared/build/champ_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /shared/unitree_go2_ros2/champ_msgs -DCMAKE_INSTALL_PREFIX=/shared/install/champ_msgs
+[57.985s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/shared/build/champ_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /shared/build/champ_msgs -- -j16 -l16
+[85.043s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/shared/build/champ_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /shared/build/champ_msgs -- -j16 -l16
+[85.062s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/shared/build/champ_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /shared/build/champ_msgs
+[137.787s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(champ_msgs)
+[137.789s] Level 1:colcon.colcon_core.environment:checking '/shared/install/champ_msgs' for CMake module files
+[137.790s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/shared/build/champ_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /shared/build/champ_msgs
+[138.134s] Level 1:colcon.colcon_core.environment:checking '/shared/install/champ_msgs' for CMake config files
+[138.396s] Level 1:colcon.colcon_core.shell:create_environment_hook('champ_msgs', 'cmake_prefix_path')
+[138.398s] INFO:colcon.colcon_core.shell:Creating environment hook '/shared/install/champ_msgs/share/champ_msgs/hook/cmake_prefix_path.ps1'
+[138.467s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/shared/install/champ_msgs/share/champ_msgs/hook/cmake_prefix_path.dsv'
+[138.497s] INFO:colcon.colcon_core.shell:Creating environment hook '/shared/install/champ_msgs/share/champ_msgs/hook/cmake_prefix_path.sh'
+[138.532s] Level 1:colcon.colcon_core.environment:checking '/shared/install/champ_msgs/lib'
+[138.540s] Level 1:colcon.colcon_core.shell:create_environment_hook('champ_msgs', 'ld_library_path_lib')
+[138.541s] INFO:colcon.colcon_core.shell:Creating environment hook '/shared/install/champ_msgs/share/champ_msgs/hook/ld_library_path_lib.ps1'
+[138.566s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/shared/install/champ_msgs/share/champ_msgs/hook/ld_library_path_lib.dsv'
+[138.614s] INFO:colcon.colcon_core.shell:Creating environment hook '/shared/install/champ_msgs/share/champ_msgs/hook/ld_library_path_lib.sh'
+[138.638s] Level 1:colcon.colcon_core.environment:checking '/shared/install/champ_msgs/bin'
+[138.641s] Level 1:colcon.colcon_core.environment:checking '/shared/install/champ_msgs/lib/pkgconfig/champ_msgs.pc'
+[138.645s] Level 1:colcon.colcon_core.environment:checking '/shared/install/champ_msgs/lib/python3.12/site-packages'
+[138.651s] Level 1:colcon.colcon_core.shell:create_environment_hook('champ_msgs', 'pythonpath')
+[138.653s] INFO:colcon.colcon_core.shell:Creating environment hook '/shared/install/champ_msgs/share/champ_msgs/hook/pythonpath.ps1'
+[138.677s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/shared/install/champ_msgs/share/champ_msgs/hook/pythonpath.dsv'
+[138.703s] INFO:colcon.colcon_core.shell:Creating environment hook '/shared/install/champ_msgs/share/champ_msgs/hook/pythonpath.sh'
+[138.729s] Level 1:colcon.colcon_core.environment:checking '/shared/install/champ_msgs/bin'
+[138.733s] INFO:colcon.colcon_core.shell:Creating package script '/shared/install/champ_msgs/share/champ_msgs/package.ps1'
+[138.756s] INFO:colcon.colcon_core.shell:Creating package descriptor '/shared/install/champ_msgs/share/champ_msgs/package.dsv'
+[138.777s] INFO:colcon.colcon_core.shell:Creating package script '/shared/install/champ_msgs/share/champ_msgs/package.sh'
+[138.799s] INFO:colcon.colcon_core.shell:Creating package script '/shared/install/champ_msgs/share/champ_msgs/package.bash'
+[138.820s] INFO:colcon.colcon_core.shell:Creating package script '/shared/install/champ_msgs/share/champ_msgs/package.zsh'
+[138.841s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/shared/install/champ_msgs/share/colcon-core/packages/champ_msgs)
+[138.892s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(champ_msgs)
+[138.894s] Level 1:colcon.colcon_core.environment:checking '/shared/install/champ_msgs' for CMake module files
+[139.272s] Level 1:colcon.colcon_core.environment:checking '/shared/install/champ_msgs' for CMake config files
+[139.520s] Level 1:colcon.colcon_core.shell:create_environment_hook('champ_msgs', 'cmake_prefix_path')
+[139.522s] INFO:colcon.colcon_core.shell:Creating environment hook '/shared/install/champ_msgs/share/champ_msgs/hook/cmake_prefix_path.ps1'
+[139.550s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/shared/install/champ_msgs/share/champ_msgs/hook/cmake_prefix_path.dsv'
+[139.573s] INFO:colcon.colcon_core.shell:Creating environment hook '/shared/install/champ_msgs/share/champ_msgs/hook/cmake_prefix_path.sh'
+[139.605s] Level 1:colcon.colcon_core.environment:checking '/shared/install/champ_msgs/lib'
+[139.613s] Level 1:colcon.colcon_core.shell:create_environment_hook('champ_msgs', 'ld_library_path_lib')
+[139.615s] INFO:colcon.colcon_core.shell:Creating environment hook '/shared/install/champ_msgs/share/champ_msgs/hook/ld_library_path_lib.ps1'
+[139.637s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/shared/install/champ_msgs/share/champ_msgs/hook/ld_library_path_lib.dsv'
+[139.661s] INFO:colcon.colcon_core.shell:Creating environment hook '/shared/install/champ_msgs/share/champ_msgs/hook/ld_library_path_lib.sh'
+[139.684s] Level 1:colcon.colcon_core.environment:checking '/shared/install/champ_msgs/bin'
+[139.686s] Level 1:colcon.colcon_core.environment:checking '/shared/install/champ_msgs/lib/pkgconfig/champ_msgs.pc'
+[139.690s] Level 1:colcon.colcon_core.environment:checking '/shared/install/champ_msgs/lib/python3.12/site-packages'
+[139.697s] Level 1:colcon.colcon_core.shell:create_environment_hook('champ_msgs', 'pythonpath')
+[139.698s] INFO:colcon.colcon_core.shell:Creating environment hook '/shared/install/champ_msgs/share/champ_msgs/hook/pythonpath.ps1'
+[139.721s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/shared/install/champ_msgs/share/champ_msgs/hook/pythonpath.dsv'
+[139.743s] INFO:colcon.colcon_core.shell:Creating environment hook '/shared/install/champ_msgs/share/champ_msgs/hook/pythonpath.sh'
+[139.809s] Level 1:colcon.colcon_core.environment:checking '/shared/install/champ_msgs/bin'
+[139.813s] INFO:colcon.colcon_core.shell:Creating package script '/shared/install/champ_msgs/share/champ_msgs/package.ps1'
+[139.832s] INFO:colcon.colcon_core.shell:Creating package descriptor '/shared/install/champ_msgs/share/champ_msgs/package.dsv'
+[139.854s] INFO:colcon.colcon_core.shell:Creating package script '/shared/install/champ_msgs/share/champ_msgs/package.sh'
+[139.877s] INFO:colcon.colcon_core.shell:Creating package script '/shared/install/champ_msgs/share/champ_msgs/package.bash'
+[139.905s] INFO:colcon.colcon_core.shell:Creating package script '/shared/install/champ_msgs/share/champ_msgs/package.zsh'
+[139.927s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/shared/install/champ_msgs/share/colcon-core/packages/champ_msgs)
+[139.945s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/shared/unitree_go2_ros2/unitree_application' with build type 'ament_cmake'
+[139.947s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/shared/unitree_go2_ros2/unitree_application'
+[139.948s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[139.949s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[139.998s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/shared/unitree_go2_ros2/champ_base' with build type 'ament_cmake'
+[139.999s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/shared/unitree_go2_ros2/champ_base'
+[140.002s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[140.003s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[140.241s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/shared/build/unitree_application': AMENT_PREFIX_PATH=/shared/install/champ_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/shared/install/champ_msgs:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/shared/install/champ_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/shared/install/champ_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake /shared/unitree_go2_ros2/unitree_application -DCMAKE_INSTALL_PREFIX=/shared/install/unitree_application
+[140.309s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/shared/build/champ_base': AMENT_PREFIX_PATH=/shared/install/champ_msgs:/shared/install/champ:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/shared/install/champ_msgs:/shared/install/champ:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/shared/install/champ_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/shared/install/champ_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake /shared/unitree_go2_ros2/champ_base -DCMAKE_INSTALL_PREFIX=/shared/install/champ_base
+[159.661s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/shared/build/unitree_application' returned '0': AMENT_PREFIX_PATH=/shared/install/champ_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/shared/install/champ_msgs:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/shared/install/champ_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/shared/install/champ_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake /shared/unitree_go2_ros2/unitree_application -DCMAKE_INSTALL_PREFIX=/shared/install/unitree_application
+[159.675s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/shared/build/unitree_application': AMENT_PREFIX_PATH=/shared/install/champ_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/shared/install/champ_msgs:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/shared/install/champ_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/shared/install/champ_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /shared/build/unitree_application -- -j16 -l16
+[170.146s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/shared/build/champ_base' returned '0': AMENT_PREFIX_PATH=/shared/install/champ_msgs:/shared/install/champ:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/shared/install/champ_msgs:/shared/install/champ:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/shared/install/champ_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/shared/install/champ_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake /shared/unitree_go2_ros2/champ_base -DCMAKE_INSTALL_PREFIX=/shared/install/champ_base
+[170.162s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/shared/build/champ_base': AMENT_PREFIX_PATH=/shared/install/champ_msgs:/shared/install/champ:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/shared/install/champ_msgs:/shared/install/champ:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/shared/install/champ_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/shared/install/champ_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /shared/build/champ_base -- -j16 -l16
+[215.637s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/shared/build/unitree_application' returned '0': AMENT_PREFIX_PATH=/shared/install/champ_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/shared/install/champ_msgs:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/shared/install/champ_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/shared/install/champ_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /shared/build/unitree_application -- -j16 -l16
+[215.697s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/shared/build/unitree_application': AMENT_PREFIX_PATH=/shared/install/champ_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/shared/install/champ_msgs:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/shared/install/champ_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/shared/install/champ_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /shared/build/unitree_application
+[218.993s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(unitree_application)
+[219.014s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/shared/build/unitree_application' returned '0': AMENT_PREFIX_PATH=/shared/install/champ_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/shared/install/champ_msgs:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/shared/install/champ_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/shared/install/champ_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /shared/build/unitree_application
+[219.025s] Level 1:colcon.colcon_core.environment:checking '/shared/install/unitree_application' for CMake module files
+[219.169s] Level 1:colcon.colcon_core.environment:checking '/shared/install/unitree_application' for CMake config files
+[219.293s] Level 1:colcon.colcon_core.shell:create_environment_hook('unitree_application', 'cmake_prefix_path')
+[219.300s] INFO:colcon.colcon_core.shell:Creating environment hook '/shared/install/unitree_application/share/unitree_application/hook/cmake_prefix_path.ps1'
+[219.344s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/shared/install/unitree_application/share/unitree_application/hook/cmake_prefix_path.dsv'
+[219.377s] INFO:colcon.colcon_core.shell:Creating environment hook '/shared/install/unitree_application/share/unitree_application/hook/cmake_prefix_path.sh'
+[219.425s] Level 1:colcon.colcon_core.environment:checking '/shared/install/unitree_application/lib'
+[219.435s] Level 1:colcon.colcon_core.environment:checking '/shared/install/unitree_application/bin'
+[219.445s] Level 1:colcon.colcon_core.environment:checking '/shared/install/unitree_application/lib/pkgconfig/unitree_application.pc'
+[219.465s] Level 1:colcon.colcon_core.environment:checking '/shared/install/unitree_application/lib/python3.12/site-packages'
+[219.473s] Level 1:colcon.colcon_core.environment:checking '/shared/install/unitree_application/bin'
+[219.480s] INFO:colcon.colcon_core.shell:Creating package script '/shared/install/unitree_application/share/unitree_application/package.ps1'
+[219.513s] INFO:colcon.colcon_core.shell:Creating package descriptor '/shared/install/unitree_application/share/unitree_application/package.dsv'
+[219.539s] INFO:colcon.colcon_core.shell:Creating package script '/shared/install/unitree_application/share/unitree_application/package.sh'
+[219.563s] INFO:colcon.colcon_core.shell:Creating package script '/shared/install/unitree_application/share/unitree_application/package.bash'
+[219.586s] INFO:colcon.colcon_core.shell:Creating package script '/shared/install/unitree_application/share/unitree_application/package.zsh'
+[219.610s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/shared/install/unitree_application/share/colcon-core/packages/unitree_application)
+[219.659s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(unitree_application)
+[219.661s] Level 1:colcon.colcon_core.environment:checking '/shared/install/unitree_application' for CMake module files
+[219.822s] Level 1:colcon.colcon_core.environment:checking '/shared/install/unitree_application' for CMake config files
+[219.964s] Level 1:colcon.colcon_core.shell:create_environment_hook('unitree_application', 'cmake_prefix_path')
+[219.966s] INFO:colcon.colcon_core.shell:Creating environment hook '/shared/install/unitree_application/share/unitree_application/hook/cmake_prefix_path.ps1'
+[219.997s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/shared/install/unitree_application/share/unitree_application/hook/cmake_prefix_path.dsv'
+[220.027s] INFO:colcon.colcon_core.shell:Creating environment hook '/shared/install/unitree_application/share/unitree_application/hook/cmake_prefix_path.sh'
+[220.060s] Level 1:colcon.colcon_core.environment:checking '/shared/install/unitree_application/lib'
+[220.068s] Level 1:colcon.colcon_core.environment:checking '/shared/install/unitree_application/bin'
+[220.072s] Level 1:colcon.colcon_core.environment:checking '/shared/install/unitree_application/lib/pkgconfig/unitree_application.pc'
+[220.076s] Level 1:colcon.colcon_core.environment:checking '/shared/install/unitree_application/lib/python3.12/site-packages'
+[220.080s] Level 1:colcon.colcon_core.environment:checking '/shared/install/unitree_application/bin'
+[220.083s] INFO:colcon.colcon_core.shell:Creating package script '/shared/install/unitree_application/share/unitree_application/package.ps1'
+[220.105s] INFO:colcon.colcon_core.shell:Creating package descriptor '/shared/install/unitree_application/share/unitree_application/package.dsv'
+[220.128s] INFO:colcon.colcon_core.shell:Creating package script '/shared/install/unitree_application/share/unitree_application/package.sh'
+[220.151s] INFO:colcon.colcon_core.shell:Creating package script '/shared/install/unitree_application/share/unitree_application/package.bash'
+[220.174s] INFO:colcon.colcon_core.shell:Creating package script '/shared/install/unitree_application/share/unitree_application/package.zsh'
+[220.195s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/shared/install/unitree_application/share/colcon-core/packages/unitree_application)
+[220.220s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/shared/unitree_go2_ros2/unitree_go2_sim' with build type 'ament_cmake'
+[220.223s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/shared/unitree_go2_ros2/unitree_go2_sim'
+[220.226s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[220.227s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[220.513s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/shared/build/unitree_go2_sim': AMENT_PREFIX_PATH=/shared/install/unitree_application:/shared/install/champ_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/shared/install/unitree_application:/shared/install/champ_msgs:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/shared/install/champ_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/shared/install/champ_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake /shared/unitree_go2_ros2/unitree_go2_sim -DCMAKE_INSTALL_PREFIX=/shared/install/unitree_go2_sim
+[238.058s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/shared/build/unitree_go2_sim' returned '0': AMENT_PREFIX_PATH=/shared/install/unitree_application:/shared/install/champ_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/shared/install/unitree_application:/shared/install/champ_msgs:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/shared/install/champ_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/shared/install/champ_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake /shared/unitree_go2_ros2/unitree_go2_sim -DCMAKE_INSTALL_PREFIX=/shared/install/unitree_go2_sim
+[238.079s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/shared/build/unitree_go2_sim': AMENT_PREFIX_PATH=/shared/install/unitree_application:/shared/install/champ_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/shared/install/unitree_application:/shared/install/champ_msgs:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/shared/install/champ_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/shared/install/champ_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /shared/build/unitree_go2_sim -- -j16 -l16
+[239.202s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/shared/build/unitree_go2_sim' returned '0': AMENT_PREFIX_PATH=/shared/install/unitree_application:/shared/install/champ_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/shared/install/unitree_application:/shared/install/champ_msgs:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/shared/install/champ_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/shared/install/champ_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /shared/build/unitree_go2_sim -- -j16 -l16
+[239.245s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/shared/build/unitree_go2_sim': AMENT_PREFIX_PATH=/shared/install/unitree_application:/shared/install/champ_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/shared/install/unitree_application:/shared/install/champ_msgs:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/shared/install/champ_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/shared/install/champ_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /shared/build/unitree_go2_sim
+[243.434s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(unitree_go2_sim)
+[243.437s] Level 1:colcon.colcon_core.environment:checking '/shared/install/unitree_go2_sim' for CMake module files
+[243.439s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/shared/build/unitree_go2_sim' returned '0': AMENT_PREFIX_PATH=/shared/install/unitree_application:/shared/install/champ_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/shared/install/unitree_application:/shared/install/champ_msgs:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/shared/install/champ_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/shared/install/champ_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /shared/build/unitree_go2_sim
+[243.571s] Level 1:colcon.colcon_core.environment:checking '/shared/install/unitree_go2_sim' for CMake config files
+[243.693s] Level 1:colcon.colcon_core.shell:create_environment_hook('unitree_go2_sim', 'cmake_prefix_path')
+[243.695s] INFO:colcon.colcon_core.shell:Creating environment hook '/shared/install/unitree_go2_sim/share/unitree_go2_sim/hook/cmake_prefix_path.ps1'
+[243.719s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/shared/install/unitree_go2_sim/share/unitree_go2_sim/hook/cmake_prefix_path.dsv'
+[243.774s] INFO:colcon.colcon_core.shell:Creating environment hook '/shared/install/unitree_go2_sim/share/unitree_go2_sim/hook/cmake_prefix_path.sh'
+[243.821s] Level 1:colcon.colcon_core.environment:checking '/shared/install/unitree_go2_sim/bin'
+[243.826s] Level 1:colcon.colcon_core.environment:checking '/shared/install/unitree_go2_sim/lib/pkgconfig/unitree_go2_sim.pc'
+[243.832s] Level 1:colcon.colcon_core.environment:checking '/shared/install/unitree_go2_sim/lib/python3.12/site-packages'
+[243.837s] Level 1:colcon.colcon_core.environment:checking '/shared/install/unitree_go2_sim/bin'
+[243.841s] INFO:colcon.colcon_core.shell:Creating package script '/shared/install/unitree_go2_sim/share/unitree_go2_sim/package.ps1'
+[243.871s] INFO:colcon.colcon_core.shell:Creating package descriptor '/shared/install/unitree_go2_sim/share/unitree_go2_sim/package.dsv'
+[243.904s] INFO:colcon.colcon_core.shell:Creating package script '/shared/install/unitree_go2_sim/share/unitree_go2_sim/package.sh'
+[243.929s] INFO:colcon.colcon_core.shell:Creating package script '/shared/install/unitree_go2_sim/share/unitree_go2_sim/package.bash'
+[243.960s] INFO:colcon.colcon_core.shell:Creating package script '/shared/install/unitree_go2_sim/share/unitree_go2_sim/package.zsh'
+[243.994s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/shared/install/unitree_go2_sim/share/colcon-core/packages/unitree_go2_sim)
+[244.061s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(unitree_go2_sim)
+[244.062s] Level 1:colcon.colcon_core.environment:checking '/shared/install/unitree_go2_sim' for CMake module files
+[244.294s] Level 1:colcon.colcon_core.environment:checking '/shared/install/unitree_go2_sim' for CMake config files
+[244.482s] Level 1:colcon.colcon_core.shell:create_environment_hook('unitree_go2_sim', 'cmake_prefix_path')
+[244.483s] INFO:colcon.colcon_core.shell:Creating environment hook '/shared/install/unitree_go2_sim/share/unitree_go2_sim/hook/cmake_prefix_path.ps1'
+[244.516s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/shared/install/unitree_go2_sim/share/unitree_go2_sim/hook/cmake_prefix_path.dsv'
+[244.547s] INFO:colcon.colcon_core.shell:Creating environment hook '/shared/install/unitree_go2_sim/share/unitree_go2_sim/hook/cmake_prefix_path.sh'
+[244.586s] Level 1:colcon.colcon_core.environment:checking '/shared/install/unitree_go2_sim/bin'
+[244.591s] Level 1:colcon.colcon_core.environment:checking '/shared/install/unitree_go2_sim/lib/pkgconfig/unitree_go2_sim.pc'
+[244.595s] Level 1:colcon.colcon_core.environment:checking '/shared/install/unitree_go2_sim/lib/python3.12/site-packages'
+[244.599s] Level 1:colcon.colcon_core.environment:checking '/shared/install/unitree_go2_sim/bin'
+[244.604s] INFO:colcon.colcon_core.shell:Creating package script '/shared/install/unitree_go2_sim/share/unitree_go2_sim/package.ps1'
+[244.632s] INFO:colcon.colcon_core.shell:Creating package descriptor '/shared/install/unitree_go2_sim/share/unitree_go2_sim/package.dsv'
+[244.658s] INFO:colcon.colcon_core.shell:Creating package script '/shared/install/unitree_go2_sim/share/unitree_go2_sim/package.sh'
+[244.687s] INFO:colcon.colcon_core.shell:Creating package script '/shared/install/unitree_go2_sim/share/unitree_go2_sim/package.bash'
+[244.717s] INFO:colcon.colcon_core.shell:Creating package script '/shared/install/unitree_go2_sim/share/unitree_go2_sim/package.zsh'
+[244.748s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/shared/install/unitree_go2_sim/share/colcon-core/packages/unitree_go2_sim)
+[290.078s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/shared/build/champ_base' returned '0': AMENT_PREFIX_PATH=/shared/install/champ_msgs:/shared/install/champ:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/shared/install/champ_msgs:/shared/install/champ:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/shared/install/champ_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/shared/install/champ_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /shared/build/champ_base -- -j16 -l16
+[290.117s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/shared/build/champ_base': AMENT_PREFIX_PATH=/shared/install/champ_msgs:/shared/install/champ:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/shared/install/champ_msgs:/shared/install/champ:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/shared/install/champ_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/shared/install/champ_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /shared/build/champ_base
+[300.532s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(champ_base)
+[300.535s] Level 1:colcon.colcon_core.environment:checking '/shared/install/champ_base' for CMake module files
+[300.536s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/shared/build/champ_base' returned '0': AMENT_PREFIX_PATH=/shared/install/champ_msgs:/shared/install/champ:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/shared/install/champ_msgs:/shared/install/champ:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/shared/install/champ_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/shared/install/champ_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /shared/build/champ_base
+[300.693s] Level 1:colcon.colcon_core.environment:checking '/shared/install/champ_base' for CMake config files
+[300.798s] Level 1:colcon.colcon_core.shell:create_environment_hook('champ_base', 'cmake_prefix_path')
+[300.800s] INFO:colcon.colcon_core.shell:Creating environment hook '/shared/install/champ_base/share/champ_base/hook/cmake_prefix_path.ps1'
+[300.848s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/shared/install/champ_base/share/champ_base/hook/cmake_prefix_path.dsv'
+[300.885s] INFO:colcon.colcon_core.shell:Creating environment hook '/shared/install/champ_base/share/champ_base/hook/cmake_prefix_path.sh'
+[300.940s] Level 1:colcon.colcon_core.environment:checking '/shared/install/champ_base/lib'
+[300.948s] Level 1:colcon.colcon_core.shell:create_environment_hook('champ_base', 'ld_library_path_lib')
+[300.950s] INFO:colcon.colcon_core.shell:Creating environment hook '/shared/install/champ_base/share/champ_base/hook/ld_library_path_lib.ps1'
+[300.972s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/shared/install/champ_base/share/champ_base/hook/ld_library_path_lib.dsv'
+[300.997s] INFO:colcon.colcon_core.shell:Creating environment hook '/shared/install/champ_base/share/champ_base/hook/ld_library_path_lib.sh'
+[301.021s] Level 1:colcon.colcon_core.environment:checking '/shared/install/champ_base/bin'
+[301.032s] Level 1:colcon.colcon_core.shell:create_environment_hook('champ_base', 'path')
+[301.034s] INFO:colcon.colcon_core.shell:Creating environment hook '/shared/install/champ_base/share/champ_base/hook/path.ps1'
+[301.057s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/shared/install/champ_base/share/champ_base/hook/path.dsv'
+[301.084s] INFO:colcon.colcon_core.shell:Creating environment hook '/shared/install/champ_base/share/champ_base/hook/path.sh'
+[301.108s] Level 1:colcon.colcon_core.environment:checking '/shared/install/champ_base/lib/pkgconfig/champ_base.pc'
+[301.112s] Level 1:colcon.colcon_core.environment:checking '/shared/install/champ_base/lib/python3.12/site-packages'
+[301.116s] Level 1:colcon.colcon_core.environment:checking '/shared/install/champ_base/bin'
+[301.128s] Level 1:colcon.colcon_core.shell:create_environment_hook('champ_base', 'pythonscriptspath')
+[301.129s] INFO:colcon.colcon_core.shell:Creating environment hook '/shared/install/champ_base/share/champ_base/hook/pythonscriptspath.ps1'
+[301.151s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/shared/install/champ_base/share/champ_base/hook/pythonscriptspath.dsv'
+[301.197s] INFO:colcon.colcon_core.shell:Creating environment hook '/shared/install/champ_base/share/champ_base/hook/pythonscriptspath.sh'
+[301.224s] INFO:colcon.colcon_core.shell:Creating package script '/shared/install/champ_base/share/champ_base/package.ps1'
+[301.246s] INFO:colcon.colcon_core.shell:Creating package descriptor '/shared/install/champ_base/share/champ_base/package.dsv'
+[301.274s] INFO:colcon.colcon_core.shell:Creating package script '/shared/install/champ_base/share/champ_base/package.sh'
+[301.296s] INFO:colcon.colcon_core.shell:Creating package script '/shared/install/champ_base/share/champ_base/package.bash'
+[301.319s] INFO:colcon.colcon_core.shell:Creating package script '/shared/install/champ_base/share/champ_base/package.zsh'
+[301.339s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/shared/install/champ_base/share/colcon-core/packages/champ_base)
+[301.391s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(champ_base)
+[301.393s] Level 1:colcon.colcon_core.environment:checking '/shared/install/champ_base' for CMake module files
+[301.566s] Level 1:colcon.colcon_core.environment:checking '/shared/install/champ_base' for CMake config files
+[301.691s] Level 1:colcon.colcon_core.shell:create_environment_hook('champ_base', 'cmake_prefix_path')
+[301.693s] INFO:colcon.colcon_core.shell:Creating environment hook '/shared/install/champ_base/share/champ_base/hook/cmake_prefix_path.ps1'
+[301.719s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/shared/install/champ_base/share/champ_base/hook/cmake_prefix_path.dsv'
+[301.744s] INFO:colcon.colcon_core.shell:Creating environment hook '/shared/install/champ_base/share/champ_base/hook/cmake_prefix_path.sh'
+[301.774s] Level 1:colcon.colcon_core.environment:checking '/shared/install/champ_base/lib'
+[301.781s] Level 1:colcon.colcon_core.shell:create_environment_hook('champ_base', 'ld_library_path_lib')
+[301.783s] INFO:colcon.colcon_core.shell:Creating environment hook '/shared/install/champ_base/share/champ_base/hook/ld_library_path_lib.ps1'
+[301.808s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/shared/install/champ_base/share/champ_base/hook/ld_library_path_lib.dsv'
+[301.831s] INFO:colcon.colcon_core.shell:Creating environment hook '/shared/install/champ_base/share/champ_base/hook/ld_library_path_lib.sh'
+[301.853s] Level 1:colcon.colcon_core.environment:checking '/shared/install/champ_base/bin'
+[301.862s] Level 1:colcon.colcon_core.shell:create_environment_hook('champ_base', 'path')
+[301.863s] INFO:colcon.colcon_core.shell:Creating environment hook '/shared/install/champ_base/share/champ_base/hook/path.ps1'
+[301.887s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/shared/install/champ_base/share/champ_base/hook/path.dsv'
+[301.914s] INFO:colcon.colcon_core.shell:Creating environment hook '/shared/install/champ_base/share/champ_base/hook/path.sh'
+[301.938s] Level 1:colcon.colcon_core.environment:checking '/shared/install/champ_base/lib/pkgconfig/champ_base.pc'
+[301.942s] Level 1:colcon.colcon_core.environment:checking '/shared/install/champ_base/lib/python3.12/site-packages'
+[301.946s] Level 1:colcon.colcon_core.environment:checking '/shared/install/champ_base/bin'
+[301.956s] Level 1:colcon.colcon_core.shell:create_environment_hook('champ_base', 'pythonscriptspath')
+[301.957s] INFO:colcon.colcon_core.shell:Creating environment hook '/shared/install/champ_base/share/champ_base/hook/pythonscriptspath.ps1'
+[301.981s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/shared/install/champ_base/share/champ_base/hook/pythonscriptspath.dsv'
+[302.007s] INFO:colcon.colcon_core.shell:Creating environment hook '/shared/install/champ_base/share/champ_base/hook/pythonscriptspath.sh'
+[302.033s] INFO:colcon.colcon_core.shell:Creating package script '/shared/install/champ_base/share/champ_base/package.ps1'
+[302.053s] INFO:colcon.colcon_core.shell:Creating package descriptor '/shared/install/champ_base/share/champ_base/package.dsv'
+[302.075s] INFO:colcon.colcon_core.shell:Creating package script '/shared/install/champ_base/share/champ_base/package.sh'
+[302.099s] INFO:colcon.colcon_core.shell:Creating package script '/shared/install/champ_base/share/champ_base/package.bash'
+[302.125s] INFO:colcon.colcon_core.shell:Creating package script '/shared/install/champ_base/share/champ_base/package.zsh'
+[302.146s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/shared/install/champ_base/share/colcon-core/packages/champ_base)
+[302.188s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[302.194s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[302.199s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[302.205s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[302.379s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[302.380s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[302.381s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[302.382s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[302.459s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files
+[302.461s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[302.464s] INFO:colcon.colcon_core.shell:Creating prefix script '/shared/install/local_setup.ps1'
+[302.479s] INFO:colcon.colcon_core.shell:Creating prefix util module '/shared/install/_local_setup_util_ps1.py'
+[302.491s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/shared/install/setup.ps1'
+[302.502s] INFO:colcon.colcon_core.shell:Creating prefix script '/shared/install/local_setup.sh'
+[302.512s] INFO:colcon.colcon_core.shell:Creating prefix util module '/shared/install/_local_setup_util_sh.py'
+[302.522s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/shared/install/setup.sh'
+[302.533s] INFO:colcon.colcon_core.shell:Creating prefix script '/shared/install/local_setup.bash'
+[302.542s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/shared/install/setup.bash'
+[302.553s] INFO:colcon.colcon_core.shell:Creating prefix script '/shared/install/local_setup.zsh'
+[302.564s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/shared/install/setup.zsh'
