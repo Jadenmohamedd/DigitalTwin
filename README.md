@@ -1,52 +1,43 @@
-# Ubuntu + Gazebo in your browser
+# Ubuntu robotics desktop
 
-Start Docker Desktop in **Linux containers** mode, then run from this folder:
+A simple Docker desktop with **Ubuntu 24.04, ROS 2 Jazzy, Gazebo Harmonic,
+and Nav2**. Includes RViz, ROS/Gazebo bridges, `gz_ros2_control`, and ROS build tools.
+Packages install automatically during the build and are reused on restart.
 
-```sh
-docker compose up -d --build
-```
-
-Open [the Ubuntu desktop](http://localhost:6080/vnc.html?autoconnect=true&resize=scale).
-The first build downloads Ubuntu, the XFCE desktop, and Gazebo; allow several minutes.
-Open **Terminal Emulator** in the desktop and start Gazebo:
+See [QUICKSTART.md](QUICKSTART.md) for launching Gazebo and the Nav2 demo.
 
 ```sh
-gz sim shapes.sdf
+docker compose up --build -d
 ```
 
-## Shared folder
+Open the [Ubuntu web desktop](http://localhost:6080/vnc.html?autoconnect=true&resize=scale).
+ROS is loaded automatically in desktop terminals.
 
-The local `shared` folder is mounted at `/shared` inside Ubuntu. Both paths access
-the same files: creating, editing, or deleting a file on either side appears on
-the other side automatically while the container is running. No sync tool or
-copy command is needed. Files remain on your computer after stopping or removing
-the container. On Linux, the host folder must be writable by the container's
-`ubuntu` user; a bind mount keeps host permissions.
+## Shared files
 
-## Versions and updates
+Local `shared/` is mounted directly at `/shared` in Ubuntu. Changes and deletions
+on either side appear on the other automatically. Files survive container removal.
+On Linux, the folder must be writable by the container's `ubuntu` user (UID 1000).
+Keep work in `/shared`: other container files and desktop settings are lost on recreation.
 
-The base is the official `ubuntu:latest` image (Docker's latest Ubuntu LTS tag).
-Gazebo Jetty is the latest stable Gazebo release at the time this setup was written.
-It is installed automatically during the image build; restarting the container
-uses the installed copy. To fetch a newer Ubuntu image and current Jetty packages:
+## Updates and troubleshooting
+
+The Ubuntu, ROS, and Gazebo release families are fixed for compatibility.
+To install their latest available package updates:
 
 ```sh
 docker compose build --pull --no-cache
 docker compose up -d
 ```
 
-Gazebo packages must exist for the Ubuntu version behind `latest`. If a new Ubuntu
-release arrives before Gazebo supports it, select the documented supported base
-temporarily (PowerShell):
+Start Docker Desktop in **Linux containers** mode before running these commands.
+The first build is large and may take several minutes. Use `docker compose logs -f`
+for container output and `docker compose down` to stop.
 
-```powershell
-$env:UBUNTU_IMAGE = 'ubuntu:24.04'
-docker compose up -d --build
-```
+The web desktop is restricted to this computer on port 6080, without a password.
+Software rendering avoids GPU setup, though complex simulations may be slow.
+Nav2 is installed with a TurtleBot demo; the shared Go2 project still requires its
+own build, dependencies, and robot-specific navigation configuration.
 
-The desktop is available only from this computer on port 6080, without a password.
-Software rendering is enabled so no GPU setup is required; complex simulations
-may run slowly. Desktop settings and other files outside `/shared` are lost when
-the container is recreated.
-
-Stop with `docker compose down`. View startup output with `docker compose logs -f`.
+Version pairing follows the [Gazebo ROS installation guide](https://gazebosim.org/docs/harmonic/ros_installation/).
+The demo follows the [Nav2 quick start](https://docs.nav2.org/jazzy/getting_started/quickstart/quickstart/).

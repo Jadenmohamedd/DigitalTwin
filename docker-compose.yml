@@ -2,8 +2,6 @@ services:
   ubuntu:
     build:
       context: ./container
-      args:
-        UBUNTU_IMAGE: ${UBUNTU_IMAGE:-ubuntu:latest}
     init: true
     ports:
       - "127.0.0.1:6080:6080"
